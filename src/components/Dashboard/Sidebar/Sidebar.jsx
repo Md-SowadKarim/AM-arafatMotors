@@ -19,7 +19,7 @@ import AdminMenu from './AdminMenu'
 import PremiumMenu from './TeacherMenu'
 import StudentMenu from './StudentMenu'
 import TeacherMenu from './TeacherMenu'
-import Logo from '../../Shared/Logo'
+import Logo from '../../../../src/components/shared/Logo'
 
 const Sidebar = () => {
   const { logOut } = useAuth()
