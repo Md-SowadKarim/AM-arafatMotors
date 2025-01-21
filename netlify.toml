@@ -2,7 +2,7 @@
 from= "/*"
 to= "/index.html"
 status = 200
-headers = { Access-Control-Allow-Origin = “*”, Authorization = “Bearer api-key”}
+
 
 [[headers]]
 Define which paths this specific [[headers]] block will cover.
