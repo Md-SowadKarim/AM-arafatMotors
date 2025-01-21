@@ -77,16 +77,16 @@ const Home = () => {
 
                     <span className="relative z-10 bg-white px-6 text-4xl my-8 font-semibold ">Our Courses</span>
                 </span>
- <div className='md:w-[100%] p-4 rounded-md dark:bg-gray-900 dark:text-gray-100 px-4  pb-4'>
+ {/* <div className='md:w-[100%] p-4 rounded-md dark:bg-gray-900 dark:text-gray-100 px-4  pb-4'>
    
-     {/* <Tittle first="Get Your" second="Product" thired=" With Crazy😮 Discounts.. "/> */}
+   
             <div className='pt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4'> 
      
             { bios.map((data)=><CourseCard key={data.cid} data={data}/>)}
      
     </div>
    
-    </div>
+    </div> */}
  
 <TrustUs></TrustUs>
 
