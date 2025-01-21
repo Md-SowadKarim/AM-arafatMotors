@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagram, FaPinterest } from 'react-icons/fa'
 import Map from './Map'
 
 import { Helmet } from 'react-helmet-async';
-import image from "/src/image/contact.jpg"
+import image from "../../image/Contact.jpg"
 
 const Contact = () => {
   const handleSubmit=(e)=>{
