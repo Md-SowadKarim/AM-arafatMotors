@@ -73,7 +73,7 @@ const Home = () => {
  <span className="relative flex justify-center mb-9 ">
                     <div
                         className="absolute inset-x-0 top-1/2 h-px text-right -translate-y-1/2 bg-blue-500 bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
-                    > <Link to="/courses">See more --</Link></div> 
+                    > <Link className='font-bold mt-10 ' to="/courses">See more --</Link></div> 
 
                     <span className="relative z-10 bg-white px-6 text-4xl my-8 font-semibold ">Our Courses</span>
                 </span>

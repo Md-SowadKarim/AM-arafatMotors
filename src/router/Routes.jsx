@@ -41,6 +41,7 @@ import { getOneProfile } from "../api/profile";
 import AuthProvider from "../providers/AuthProvider";
 import AdminRoute from './AdminRoute';
 import PrivateRoute from './PrivateRoute';
+import OrderDetails from "../pages/orderDetails/OrderDetails";
 
   
   const router = createBrowserRouter([
@@ -97,6 +98,11 @@ import PrivateRoute from './PrivateRoute';
         {
             path:"/contact",
             element: <Contact/>
+        },
+        {
+            path:"/orderDetails/:oid",
+            element:( <OrderDetails/>),
+            loader: ({ params }) => getOneOrder(params.oid),
         },
         {
           path:"/login",

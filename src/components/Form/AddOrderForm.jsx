@@ -18,7 +18,7 @@ const AddOrderFrom = ({
     <form onSubmit={handleSubmit} >
         <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
             <div className="sm:col-span-2">
-                <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Name(আপনার নাম)</label>
+                <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Name</label>
                 <input  type="text" name="name" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="আপনার নাম" required=""/>
             </div>
             {/* <div className="sm:col-span-2">
@@ -43,7 +43,7 @@ const AddOrderFrom = ({
             <div className=' p-4 bg-white w-full  m-auto rounded-lg'>
               <div className='file_upload px-5 py-3 relative border-4 border-dotted border-gray-300 rounded-lg'>
                 <div className='flex flex-col w-max mx-auto text-center'>
-                  <label> এন আই ডি বা জন্ম নিবন্ধন ছবি
+                  <label> 
                     <input
                       onChange={e => handleImageChange(e.target.files[0])}
                       className='text-sm cursor-pointer w-36 hidden'

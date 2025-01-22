@@ -26,11 +26,11 @@ const AddBlogForm = ({
         <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
             <div className="sm:col-span-2">
                 <label for="title1" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Blog Title 1</label>
-                <input defaultValue="Blog title-1" type="text" name="title1" id="title1" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type your question tittle" required=""/>
+                <input  type="text" name="title1" id="title1" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Blog title-1" required=""/>
             </div>
             <div className="sm:col-span-2">
                 <label for="course details1" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Blog Details 1</label>
-                <textarea defaultValue="Blog details-1" type="text" name="details1" id="details1" className="bg-gray-50 border h-52 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type your question here" required=""/>
+                <textarea type="text" name="details1" id="details1" className="bg-gray-50 border h-52 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Blog details-1" required=""/>
             </div>
             <div className="sm:col-span-2">
             <div className=' p-4 bg-white w-full  m-auto rounded-lg'>
@@ -57,11 +57,11 @@ const AddBlogForm = ({
               {/* 2nd  =====================================================================*/}
               <div className="sm:col-span-2">
                 <label for="title2" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Blog Title 2</label>
-                <input defaultValue="Blog title-2" type="text" name="title2" id="title2" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type your question tittle" required=""/>
+                <input  type="text" name="title2" id="title2" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Blog tittle-2" required=""/>
             </div>
             <div className="sm:col-span-2">
                 <label for="course details2" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Blog Details 2</label>
-                <textarea defaultValue="Blog details-2" type="text" name="details2" id="details2" className="bg-gray-50 border h-52 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type your question here" required=""/>
+                <textarea  type="text" name="details2" id="details2" className="bg-gray-50 border h-52 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Blog details-2" required=""/>
             </div>
             <div className="sm:col-span-2">
             <div className=' p-4 bg-white w-full  m-auto rounded-lg'>
@@ -89,11 +89,11 @@ const AddBlogForm = ({
          {/* 3rd  =====================================================================*/}
          <div className="sm:col-span-2">
                 <label for="title3" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Blog Title 3</label>
-                <input defaultValue="Blog title-3" type="text" name="title3" id="title3" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type your question tittle" required=""/>
+                <input  type="text" name="title3" id="title3" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Blog tittle-3" required=""/>
             </div>
             <div className="sm:col-span-2">
                 <label for="course details3" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Blog Details 3</label>
-                <textarea defaultValue="Blog details-3" type="text" name="details3" id="details3" className="bg-gray-50 border h-52 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type your question here" required=""/>
+                <textarea  type="text" name="details3" id="details3" className="bg-gray-50 border h-52 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Blog details-3" required=""/>
             </div>
             <div className="sm:col-span-2">
             <div className=' p-4 bg-white w-full  m-auto rounded-lg'>
@@ -125,7 +125,7 @@ const AddBlogForm = ({
             </div> 
             <div>
                 <label for="bid" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Blog Id</label>
-                <input defaultValue="bid1" type='text'  name="bid" id="bid" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="You are willing to pay" required=""/>
+                <input  type='text'  name="bid" id="bid" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Blog Id-bid*" required=""/>
             </div> 
         
     

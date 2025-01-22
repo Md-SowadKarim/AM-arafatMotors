@@ -12,12 +12,13 @@ import { addOrder } from '../../api/order'
 import { getOneUser } from '../../api/auth'
 import { useQuery } from '@tanstack/react-query'
 import { imageUpload } from '../../api/utils'
+import Container from '../../components/shared/Container'
 
 const Buy = () => {
   const navigate=useNavigate()
   const { user } = useAuth()
   const[loading,setLoading]=useState(false)
-  const [uploadButtonText, setUploadButtonText] = useState('Upload NID or Birth-Certificate')
+  const [uploadButtonText, setUploadButtonText] = useState('NID or Birth-Certificate')
     const data=useLoaderData()
     const { data: oneUser={} , } = useQuery({
       queryKey: ['oneUser'],
@@ -127,26 +128,27 @@ else
                   <meta name='keywords' content={data.keywords}></meta>
           
                 </Helmet> */}
+                <Container>
      <section class="py-8 bg-white md:py-16 dark:bg-gray-900 antialiased">
-    <div class="max-w-screen-xl px-4 mx-auto 2xl:px-0">
-      <div class="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
-      <div class="relative max-w-xs overflow-hidden rounded-xl bg-cover bg-no-repeat">
+    <div class="max-w-screen-xl border-2 border-blue-500 rounded-xl px-4 mx-auto 2xl:px-0">
+      <div class="lg:grid lg:grid-cols-2  lg:gap-8 xl:gap-16">
+      <div class="relative max-w-xs  items-center text-center mx-auto  overflow-hidden rounded-xl bg-cover bg-no-repeat">
   <img
     src={data.image}
-    class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+    class="max-w-xs transition   duration-300 ease-in-out hover:scale-110"
     alt="Louvre" />
 </div>
 
-        <div class="mt-6 sm:mt-8 lg:mt-0">
+        <div class="mt sm:mt-8   lg:mt-0">
           <h1
-            class="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white"
+            class="text-xl md:mt-8 font-semibold text-gray-900 sm:text-2xl dark:text-white"
           >{data.title}
           
           </h1>
           <div class="mt-4 sm:items-center sm:gap-4 sm:flex">
           <div className='flex items-center gap-2'>
-            <p class="text-4xl font-extrabold leading-tight text-orange-500">{data.price} Tk</p>
-            <span class="text-sm text-slate-900  dark:text-gray-400 line-through">{data.lesson} TK</span>
+            <p class="text-4xl font-extrabold leading-tight animate-bounce text-orange-500">{data.price} Tk</p>
+            {/* <span class="text-sm text-slate-900  dark:text-gray-400 line-through">{data.lesson} TK</span> */}
           </div>
           {/* {
             data.stock >=1 ? <h1 className='font-extrabold text-green-500'>In Sotck : {data.stock} piece</h1> : <h1 className='font-extrabold text-red-500'>Out Of Stock</h1>
@@ -156,7 +158,13 @@ else
           
           </div>
           <div>
-            <h1 className=' dark:text-blue-500 mt-2 font-extrabold animate-bounce text-2xl text-blue-600'> Offer Message : {data.duration}</h1>
+            <h1 className=' dark:text-blue-500 mt-2 font-extrabold  text-xl text-blue-600'> Duration : {data.duration}</h1>
+          </div>
+          <div>
+            <h1 className=' dark:text-blue-500 mt-2 font-extrabold  text-xl text-blue-600'> Practical : {data.practical} </h1>
+          </div>
+          <div>
+            <h1 className=' dark:text-blue-500 mt-2 font-extrabold  text-xl text-blue-600'> Mechanical : {data.mechanical}</h1>
           </div>
         
 
@@ -167,10 +175,12 @@ else
       </div>
     </div>
   </section>
- 
-    <AddOrderFrom handleImageChange={handleImageChange}
+  <AddOrderFrom handleImageChange={handleImageChange}
         
         uploadButtonText={uploadButtonText}   handleSubmit={handleSubmit} />
+  </Container>
+ 
+   
 
   
   

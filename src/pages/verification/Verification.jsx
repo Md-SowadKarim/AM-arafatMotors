@@ -103,7 +103,7 @@ const data= useLoaderData()
        name: 'Details',
        selector: row => (
            <div >
-             <Link to={`/course/${row.Course.cid}`}>
+             <Link to={`/orderDetails/${row.oid}`}>
               <button className='bg-blue-600 px-4 py-3 rounded-lg text-white' onClick={e=> console.log("its clicked the edit button")}>Details</button>
               </Link>
            </div>

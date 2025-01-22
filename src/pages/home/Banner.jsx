@@ -2,6 +2,8 @@
 import CountUp from 'react-countup';
 import image1 from "../../assets/image/graduated.png"
 import image2 from "../../assets/image/online-learning.png"
+import image3 from "../../assets/image/students.png"
+import image4 from "../../assets/image/branch.png"
 const Banner = () => {
   return (
     <div>
@@ -89,7 +91,7 @@ const Banner = () => {
           </div>
           <div className=" bg-slate-400  flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-gray-900 dark:text-gray-100">
             <div className="flex justify-center p-2 align-middle rounded-lg sm:p-4 dark:bg-violet-400">
-              <img className="h-14 w-14" src="/public/image/students.png" alt="" />
+              <img className="h-14 w-14" src={image3} alt="" />
             </div>
             <div className="flex flex-col justify-center align-middle">
               <p className="text-3xl font-semibold leadi">
@@ -107,7 +109,7 @@ const Banner = () => {
           </div>
           <div className=" bg-slate-400 flex p-4 space-x-4 rounded-lg md:space-x-6 dark:bg-gray-900 dark:text-gray-100">
             <div className="flex justify-center p-2 align-middle rounded-lg sm:p-4 dark:bg-violet-400">
-              <img className="h-14 w-14" src="/public/image/branch.png" alt="" />
+              <img className="h-14 w-14" src={image4} alt="" />
             </div>
             <div className="flex flex-col justify-center align-middle">
               <p className="text-3xl font-semibold leadi">

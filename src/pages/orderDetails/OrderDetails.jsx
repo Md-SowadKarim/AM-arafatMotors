@@ -1,57 +1,48 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useLoaderData } from 'react-router-dom'
-import { getAllOrder, getOneOrder } from '../../../api/order'
+import { getOneUser } from '../../api/auth'
 import { useQuery } from '@tanstack/react-query'
+import { getOneProfile } from '../../api/profile'
 
-const UserDetails = () => {
+const OrderDetails = () => {
+
     const data=useLoaderData()
     console.log(data)
-    const [ord,setOrd]=useState([])
-    const { data: order = [], refetch } = useQuery({
-        queryKey: ['userOrderr'],
-        queryFn: async () => await getAllOrder(),   
+    const { data: oneUser = [], refetch } = useQuery({
+        queryKey: ['oneUserr'],
+        queryFn: async () => await getOneUser(data?.email),   
       })
-        const[load,setLoad]=useState(false)
-      console.log(order)
-      var order2=[]
-     order2=order.filter((od)=>od?.email == data?.email)
-    console.log(order2)
-   
+    const { data: oneprofile = [],  } = useQuery({
+        queryKey: ['oneProfilee'],
+        queryFn: async () => await getOneProfile(data?.email),   
+      })
+      console.log(oneUser)
+      console.log(oneprofile)
   return (
     <div>
-     
-{/* <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={data.image} alt=""/>
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Name : {data.name}</h5>
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Email : {data.email}</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Address : {data.preaddress}</p>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Address : {data.peraddress}</p>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">NID : {data.nid}</p>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Phone : {data.phone}</p>
-    </div>
-</a>
-{
     
-} */}
-
-
-
 <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
-      <div className="h-auto rounded-lg ">
+      <div className="h-auto mt-4 rounded-lg ">
 
 
         <a href="#" className="group relative block rounded-xl bg-black">
           <img
-            alt="image"
-            src={data.image}
-             className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+            className='
+                object-cover h-[100%] w-full hover:scale-110 transition  duration-300 ease-in-out
+              '
+            src={data?.image}
+            alt='product image'
           />
 
           <div className="relative p-4 sm:p-6 lg:p-8">
+<p className='mx-auto text-center text-xl text-white my-2 underline'>Course Details</p>
 
-
-            <p className="text-xl font-bold text-white sm:text-2xl">{data.name}</p>
+            <p className="text-xl font-bold text-white sm:text-2xl"> Title : {data.Course.title}</p>
+            <p className="text-xl font-bold text-white sm:text-2xl">Duration : {data.Course.duration}</p>
+            <p className="text-xl font-bold text-white sm:text-2xl">Price : {data.Course.price}</p>
+            <p className="text-xl font-bold text-white sm:text-2xl">Mechanical Class : {data.Course.mechanical}</p>
+            <p className="text-xl font-bold text-white sm:text-2xl">Practical Class : {data.Course.practical}</p>
+            <p className="text-xl font-bold text-white sm:text-2xl">Details : {data.Course.details}</p>
 
             <div className="mt-32 sm:mt-48 lg:mt-64">
               <div
@@ -74,10 +65,10 @@ const UserDetails = () => {
 
       <div className="h-auto rounded-lg bg-gray-200 lg:col-span-2">
 
-        <div className="bg-slate-300 rounded-xl">
+        <div className="bg-slate-300  md:mt-4 rounded-xl">
           <div className="px-4 sm:px-0">
             <h3 className=" px-4 text-xl mx-auto text-center font-semibold text-gray-900">Applicant Information</h3>
-            <p className="mt-1 max-w-2xl text-center px-4 text-sm/6 text-gray-500">Personal details and application.</p>
+            <p className="mt-1 max-w-2xl text-center mx-auto px-4 text-sm/6 text-gray-500">Personal details and application.</p>
 
 
 
@@ -89,14 +80,20 @@ const UserDetails = () => {
                 <dt className="text-sm/6 px-4 font-medium text-gray-900">Full name</dt>
                 <dd className="mt-1 px-4 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">{data.name}</dd>
               </div>
-              {/* <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+              <div className="px-4 py-1  sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt className="text-sm/6 my-auto px-4 font-medium text-gray-900">User Image</dt>
+                <dd className="mt-1  px-4 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
+                <img className='h-16' src={oneprofile.image} alt="" />
+                </dd>
+              </div>
+              <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                 <dt className="text-sm/6 px-4 font-medium text-gray-900">Father Name</dt>
                 <dd className="mt-1 px-4 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">{data.fname}</dd>
               </div>
               <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                 <dt className="text-sm/6 px-4 font-medium text-gray-900">Mother Name</dt>
                 <dd className="mt-1 px-4 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">{data.mname}</dd>
-              </div> */}
+              </div>
             
               <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                 <dt className="text-sm/6 px-4 font-medium text-gray-900">Email address</dt>
@@ -104,11 +101,15 @@ const UserDetails = () => {
               </div>
               <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                 <dt className="text-sm/6 px-4 font-medium text-gray-900">NID Number</dt>
-                <dd className="mt-1 px-4 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">{data.nid}</dd>
+                <dd className="mt-1 px-4 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">{oneprofile.nid}</dd>
               </div>
               <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                <dt className="text-sm/6 px-4 font-medium text-gray-900">Phone Number</dt>
-                <dd className="mt-1 px-4 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">{data.phone}</dd>
+                <dt className="text-sm/6 px-4 font-medium text-gray-900">Phone Number 1</dt>
+                <dd className="mt-1 px-4 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">{data.phone1}</dd>
+              </div>
+              <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt className="text-sm/6 px-4 font-medium text-gray-900">Phone Number 2</dt>
+                <dd className="mt-1 px-4 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">{data.phone2}</dd>
               </div>
               <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                 <dt className="text-sm/6 px-4 font-medium text-gray-900">Emergency</dt>
@@ -116,11 +117,15 @@ const UserDetails = () => {
               </div>
               <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                 <dt className="text-sm/6 px-4 font-medium text-gray-900">Present Address </dt>
-                <dd className="mt-1 px-4 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">{data.preaddress}</dd>
+                <dd className="mt-1 px-4 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">{oneprofile.preaddress}</dd>
               </div>
               <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                <dt className="text-sm/6 px-4 font-medium text-gray-900">Permanent Address </dt>
-                <dd className="mt-1 px-4 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">{data.peraddress}</dd>
+                <dt className="text-sm/6 px-4 font-medium text-gray-900">Status  </dt>
+                <dd className="mt-1 px-4 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">{data.status}</dd>
+              </div>
+              <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                <dt className="text-sm/6 px-4 font-medium text-gray-900">Starting Date </dt>
+                <dd className="mt-1 px-4 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">{data.sdate}</dd>
               </div>
             
               {/* 
@@ -171,7 +176,8 @@ const UserDetails = () => {
 
 
     </div>
+   
   )
 }
 
-export default UserDetails
+export default OrderDetails

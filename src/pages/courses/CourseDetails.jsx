@@ -27,7 +27,7 @@ This component comes with some `rtl` classes. Please remove them if they are not
 
                 
             >
-                <div className="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
+                <div className="bg-blue-500 p-8 md:p-12 lg:px-16 lg:py-24">
                     <div className="text-center ltr:sm:text-left rtl:sm:text-right">
 
 
@@ -36,10 +36,10 @@ This component comes with some `rtl` classes. Please remove them if they are not
                             <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
                                 <div className="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
                                     <div>
-                                        <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl">Course Detailse</h1>
+                                        <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl">{data.title}</h1>
 
                                         <p className="mt-1.5 text-lg text-slate-700">
-                                            {data.title}
+                                           Free Visiting
                                         </p>
                                     </div>
 
@@ -114,14 +114,14 @@ This component comes with some `rtl` classes. Please remove them if they are not
             <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
                 <img
                     alt=""
-                    src="/src/image/Cruse car  card .jpg"
+                    src={data.image}
                     className="h-56 w-full object-cover"
                 />
 
                 <div className="p-4 sm:p-6">
                 <div className=" p-9 flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
-        <span className="text-red-500 text-2xl font-semibold ">FEE</span>
-        <span className="text-red-500 text-2xl font-semibold" >BDT:{data.price}</span>
+        <span className="text-blue-500 text-2xl font-semibold ">FEE</span>
+        <span className="text-blue-500 text-2xl font-semibold" >BDT:{data.price}</span>
       </div>
 
                    
@@ -132,7 +132,7 @@ This component comes with some `rtl` classes. Please remove them if they are not
                     >
                         <span className="absolute inset-0 border border-red-600 group-active:border-red-500"></span>
                         <span
-                            className="block border border-red-600 bg-red-600 px-12 py-3 transition-transform active:border-red-500 active:bg-red-500 group-hover:-translate-x-1 group-hover:-translate-y-1"
+                            className="block border border-red-600 bg-blue-600 px-12 py-3 transition-transform active:border-red-500 active:bg-red-500 group-hover:-translate-x-1 group-hover:-translate-y-1"
                         >
                             ENROLL NOW
                         </span>
