@@ -3,7 +3,8 @@ import { clearCookie } from './auth'
 
 const axiosSecure = axios.create({
  // baseURL: 'https://server-eosin-six.vercel.app/',
-  baseURL: 'arafatmotorserver.vercel.app',
+  baseURL: 'https://arafatmotorserver.vercel.app',
+ // baseURL: 'https://arafatserver.vercel.app/',
  // baseURL: 'http://localhost:8000/',
   withCredentials: true,
 })
