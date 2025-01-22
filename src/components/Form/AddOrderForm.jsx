@@ -18,8 +18,8 @@ const AddOrderFrom = ({
     <form onSubmit={handleSubmit} >
         <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
             <div className="sm:col-span-2">
-                <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Name</label>
-                <input defaultValue="User Name" type="text" name="name" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type your question tittle" required=""/>
+                <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Name(আপনার নাম)</label>
+                <input  type="text" name="name" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="আপনার নাম" required=""/>
             </div>
             {/* <div className="sm:col-span-2">
                 <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Email</label>
@@ -33,17 +33,17 @@ const AddOrderFrom = ({
         
             <div>
                 <label for="phone1" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number 1</label>
-                <input defaultValue="018000000001" type='text'  name="phone1" id="phone1" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="You are willing to pay" required=""/>
+                <input  type='text'  name="phone1" id="phone1" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="১ম ফোন নাম্বার" required=""/>
             </div> 
             <div>
                 <label for="phone2" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number 2</label>
-                <input defaultValue="018000000002" type='text'  name="phone2" id="phone2" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="You are willing to pay" required=""/>
+                <input  type='text'  name="phone2" id="phone2" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="২য় ফোন নাম্বার" required=""/>
             </div> 
             <div className="sm:col-span-2">
             <div className=' p-4 bg-white w-full  m-auto rounded-lg'>
               <div className='file_upload px-5 py-3 relative border-4 border-dotted border-gray-300 rounded-lg'>
                 <div className='flex flex-col w-max mx-auto text-center'>
-                  <label>
+                  <label> এন আই ডি বা জন্ম নিবন্ধন ছবি
                     <input
                       onChange={e => handleImageChange(e.target.files[0])}
                       className='text-sm cursor-pointer w-36 hidden'
@@ -66,28 +66,28 @@ const AddOrderFrom = ({
         
             <div>
                 <label for="fname" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Fathers Name</label>
-                <input defaultValue="Fathers Name" type='text' min="1000" name="fname" id="fname" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="You are willing to pay" required=""/>
+                <input  type='text' min="1000" name="fname" id="fname" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="পিতার নাম" required=""/>
             </div> 
              <div>
                 <label for="mname" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">"Mothers Name"</label>
-                <input defaultValue="MOthers Name" type='text' name="mname" id="mname" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Specific tutors number" />
+                <input  type='text' name="mname" id="mname" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="মাতার নাম" />
             </div> 
              <div>
                 <label for="address" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Address</label>
-                <input defaultValue=" Address" type='text' name="address" id="address" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Specific tutors number" />
+                <input  type='text' name="address" id="address" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="ঠিকানা" />
             </div> 
             
              <div>
                 <label for="emergency" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Emergency Contact</label>
-                <input defaultValue="01800000000" type='text' name="emergency" id="emergency" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Specific tutors number" />
+                <input  type='text' name="emergency" id="emergency" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="জরুরি যোগাযোগ " />
             </div> 
              <div>
                 <label for="sdate" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Starting Date</label>
-                <input  type='date' name="sdate" id="sdate" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Specific tutors number" />
+                <input  type='date' name="sdate" id="sdate" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="কোর্স শুরুর তারিখ" />
             </div> 
              <div>
                 <label for="cupon" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Cupon</label>
-                <input defaultValue="Cupon Code"  type='text' name="cupon" id="cupon" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Specific tutors number" />
+                <input   type='text' name="cupon" id="cupon" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="কুপন কোড" />
             </div> 
            
            
