@@ -8,7 +8,7 @@ const ThankYou = () => {
     <div class="h-full lg:w-[60%] sm:w-[80%] xs:w-[90%] mx-auto flex gap-8 items-center">
         <div
             class="flex flex-col gap-4 text-white dark:text-black p-4 rounded-lg border border-orange-300 shadow-xl shadow-orange-400/30">
-            <h5 class="text-sm text-orange-500 font-semibold">Pagla Mart, Your Mart</h5>
+            <h5 class="text-sm text-orange-500 font-semibold">Arafat Motors Driving Trining School</h5>
             <div class="w-full flex gap-2 items-center justify-around">
                 <div class="text-5xl font-semibold uppercase font-serif">Thank You</div>
                 <hr class="w-[50%] h-1 rounded-full border-t-orange-500 bg-orange-500" />

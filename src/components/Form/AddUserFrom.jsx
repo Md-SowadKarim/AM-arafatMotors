@@ -2,7 +2,7 @@ import React from 'react'
 import { TbFidgetSpinner } from 'react-icons/tb';
 
 const AddUserFrom = ({
-  handleImageChange,
+ 
   uploadButtonText,
   handleSubmit,
   preProfile,
@@ -20,7 +20,7 @@ const AddUserFrom = ({
         <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
             <div className="sm:col-span-2">
                 <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Name</label>
-                <input defaultValue="User Name" type="text" name="name" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Type your question tittle" required=""/>
+                <input required type="text" name="name" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Your Full Name"/>
             </div>
             {/* <div className="sm:col-span-2">
                 <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Email</label>
@@ -32,16 +32,15 @@ const AddUserFrom = ({
               <div className='file_upload px-5 py-3 relative border-4 border-dotted border-gray-300 rounded-lg'>
                 <div className='flex flex-col w-max mx-auto text-center'>
                   <label>
-                    <input
-                      onChange={e => handleImageChange(e.target.files[0])}
-                      className='text-sm cursor-pointer w-36 hidden'
-                      type='file'
-                      name='image'
-                      id='image'
-                      accept='image/*'
-                      hidden
-                    />
-                    <div className='bg-rose-500 text-white border border-gray-300 rounded font-semibold cursor-pointer p-1 px-3 hover:bg-rose-500'>
+                  <input
+                     // onChange={e => handleImageChange(e.target.files[0])}
+                required
+                type='file'
+                id='image'
+                name='image'
+                accept='image/*'
+              />
+                    <div className='bg-blue-500 mt-1 text-white border border-gray-300 rounded font-semibold cursor-pointer p-1 px-3 hover:bg-rose-500'>
                     {uploadButtonText}
                     </div>
                   </label>
@@ -55,27 +54,27 @@ const AddUserFrom = ({
         
             <div>
                 <label for="phone" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number</label>
-                <input defaultValue="01800000000" type='text'  name="phone" id="phone" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="You are willing to pay" required=""/>
+                <input  type='text'  name="phone" id="phone" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Your Phone Number" required="true"/>
             </div> 
              <div>
                 <label for="preaddress" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Present Address</label>
-                <input defaultValue="Present Address" type='text' name="preaddress" id="preaddress" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Specific tutors number" />
+                <input  type='text' name="preaddress" id="preaddress" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Present Address" required />
             </div> 
              <div>
                 <label for="peraddress" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Permanent Address</label>
-                <input defaultValue="Address" type='text' name="peraddress" id="peraddress" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Specific tutors number" />
+                <input  type='text' name="peraddress" id="peraddress" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Permanent Address" required />
             </div> 
              <div>
                 <label for="emergency" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Emergency Contact</label>
-                <input defaultValue="01800000000" type='text' name="emergency" id="emergency" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Specific tutors number" />
+                <input required  type='text' name="emergency" id="emergency" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Emergency Contact" />
             </div> 
              <div>
                 <label for="dob" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Date of Birth</label>
-                <input  type='date' name="dob" id="dob" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Specific tutors number" />
+                <input required type='date' name="dob" id="dob" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Specific tutors number" />
             </div> 
              <div>
                 <label for="nid" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> NID Number</label>
-                <input defaultValue="00000000"  type='text' name="nid" id="nid" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Specific tutors number" />
+                <input required  type='text' name="nid" id="nid" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="NID Number" />
             </div> 
            
            

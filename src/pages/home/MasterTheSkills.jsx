@@ -3,7 +3,17 @@ import image2 from "/public/image/skill1.jpg"
 import image3 from "/public/image/skill2.jpg"
 import image4 from "/public/image/skill3.jpg"
 import image5 from "/public/image/Scooters.jpg"
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from "react"
+
 const MasterTheSkills = () => {
+  useEffect(()=>{
+    Aos.init({
+      duration:2000
+    });
+  })
+
   return (
     <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
       <div className="h-auto rounded-lg ">
@@ -26,7 +36,7 @@ const MasterTheSkills = () => {
             <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl">
               Master the skills to drive your career
             </h2>
-            <hr className="h-1 w-[80%] bg-blue-500 my-2 " />
+            <hr data-aos="fade-right"  className="h-1 w-[80%] bg-blue-500 my-2 " />
 
             <p className="mt-4 text-gray-700">
               Get certified, master modern tech skills, and level up your career whether you’re starting out or a seasoned pro. 95% of eLearning learners report our hands-on content directly helped their careers.

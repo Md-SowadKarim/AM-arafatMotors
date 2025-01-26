@@ -41,7 +41,7 @@ const News = () => {
                             </h1>
                             <p className="mt-6 text-xl/8 text-gray-700 ">
 
-                                PATHWAY Driving Training School is one of the best driving training centers in Dhaka. It is approved by Bangladesh Road Transport Authority (BRTA). [Registration No: 116/2018]
+                            Arafat Motor Driving Training School is one of the best driving training centers in Khulna. It is approved by Bangladesh Road Transport Authority (BRTA). [Registration No: 139/2019]
                             </p>
                         </div>
                     </div>
@@ -57,42 +57,38 @@ const News = () => {
                     <div className="lg:pr-4">
                         <div className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">
                             <p>
-                            <strong className="font-semibold text-gray-900 text-left">Mission:</strong> Mission: To provide comprehensive, high-quality driving education that meets international standards, ensuring students are well-prepared for real-world driving challenges.
+                            <strong className="font-semibold text-gray-900 text-left">Mission:</strong> প্রতিষ্ঠানটির মূল লক্ষ্য হচ্ছে চালকদের মধ্যে আন্তর্জাতিক মানের গাড়ি চালানোর দক্ষতার সহিত সড়ক পরিবহন আইন ও নিয়ম-কানুনের প্রতি পূর্ণ জ্ঞান, শ্রদ্ধাশীল এবং উন্নত মনোভাব তৈরি করা। 
                             </p>
                             <ul role="list" className="mt-8 space-y-8 text-gray-600">
                                 <li className="flex gap-x-3">
 
                                     <span className="text-left">
-                                        <strong className="font-semibold text-gray-900">Vision.</strong> To create safer roads by producing highly skilled and responsible drivers.
+                                        <strong className="font-semibold text-gray-900">Vision.</strong> এখানে শিক্ষার্থীদের প্রাথমিক থেকে উন্নত স্তরের ড্রাইভিং প্রশিক্ষণ দেওয়া হয়, যা আধুনিক যানবাহনের প্রযুক্তিগত দিক এবং বিভিন্ন চ্যালেঞ্জ মোকাবিলায় সহায়তা করে।
+আরাফাত মোটর ড্রাইভিং ট্রেনিং স্কুলে দক্ষ প্রশিক্ষকদের তত্ত্বাবধানে শিক্ষার্থীদের হাতে-কলমে প্রশিক্ষণ দেওয়া হয়। প্রতিটি প্রশিক্ষণ সেশন বাস্তব অভিজ্ঞতার ওপর ভিত্তি করে তৈরি, যেখানে শিক্ষার্থীরা শুধু ড্রাইভিং-সম্পর্কিত কৌশলই শেখে না, বরং জটিল পরিস্থিতিতে কীভাবে দ্রুত সিদ্ধান্ত নিতে হয়, সে সম্পর্কেও ধারণা লাভ করে।
+প্রতিষ্ঠানের প্রশিক্ষণ কার্যক্রমের বিশেষ দিক হলো সড়ক নিরাপত্তার ওপর জোর দেওয়া। প্রতিটি শিক্ষার্থীকে ট্রাফিক আইন, সিগনাল সিস্টেম, এবং রোড সাইন সম্পর্কে বিশদভাবে শেখানো হয়। পাশাপাশি, জরুরি পরিস্থিতিতে কিভাবে দ্রুত এবং সঠিক সিদ্ধান্ত নিতে হয়, সে সম্পর্কেও তাদের প্রশিক্ষণ দেওয়া হয়। এই দক্ষতা চালকদের শুধু তাদের নিজস্ব নিরাপত্তা নয়, পথচারী এবং অন্যান্য যানবাহনের চালকদের নিরাপত্তা নিশ্চিত করতেও সাহায্য করে।
+
+প্রতিষ্ঠানটির প্রশিক্ষণ পদ্ধতি আধুনিক, বৈজ্ঞানিক এবং ব্যবহারিক শিক্ষার ওপর ভিত্তি করে তৈরি। এখানে শিক্ষার্থীদের শুধু ড্রাইভিং-এর মৌলিক কৌশল শেখানো হয় না, বরং সড়ক পরিবহন আইন, যানবাহনের প্রযুক্তিগত দিক, এবং সড়ক নিরাপত্তার গুরুত্ব সম্পর্কেও সম্যক জ্ঞান প্রদান করা হয়। আন্তর্জাতিক মানদণ্ড অনুসরণ করে চালকদের প্রস্তুত করা হয়, যা তাদেরকে শুধু দেশে নয়, আন্তর্জাতিক পর্যায়েও সুনামের সঙ্গে কাজ করতে সক্ষম করে।
+আরাফাত মোটর ড্রাইভিং ট্রেনিং স্কুলে বিভিন্ন ধরণের কোর্স অফার করা হয়। প্রাথমিক কোর্সে নতুন শিক্ষার্থীদের জন্য হাতে-কলমে গাড়ি চালানোর প্রশিক্ষণ দেওয়া হয়। এখানে শিক্ষার্থীরা গাড়ির বিভিন্ন অংশের কার্যপ্রণালী, সঠিক গতি নিয়ন্ত্রণ, ব্রেক ব্যবহার, এবং স্টিয়ারিং নিয়ন্ত্রণের কৌশল শেখে। এ ছাড়া, উন্নত স্তরের কোর্সে পেশাদার চালকদের জন্য আরও জটিল এবং চ্যালেঞ্জিং পরিস্থিতি মোকাবিলার দক্ষতা অর্জনের সুযোগ রয়েছে।
+আরাফাত মোটর ড্রাইভিং ট্রেনিং স্কুলের আরেকটি গুরুত্বপূর্ণ দিক হলো তাদের প্রশিক্ষকদের দক্ষতা। এই প্রতিষ্ঠানে নিয়োজিত প্রশিক্ষকরা অভিজ্ঞ, দক্ষ, এবং প্রশিক্ষণ প্রদানের ক্ষেত্রে বিশেষ যোগ্যতাসম্পন্ন। তারা শিক্ষার্থীদের সঙ্গে বন্ধুত্বপূর্ণ পরিবেশ তৈরি করে, যা শেখার প্রক্রিয়াকে আরও সহজ এবং ফলপ্রসূ করে তোলে। শিক্ষার্থীদের প্রতিটি ভুলকে শুধরানোর পাশাপাশি তাদের আত্মবিশ্বাস বাড়াতে প্রশিক্ষকরা বিশেষ ভূমিকা পালন করে থাকেন। এতে ভবিষ্যতে দক্ষ এবং সৎ পেশাদার চালক হিসেবে প্রতিষ্ঠিত হতে সাহায্য করে এবং তারা সহজেই বিদেশে কাজ করার জন্য মানসিক এবং পেশাগতভাবে প্রস্তুত হয়ে ওঠে।
+আধুনিক প্রযুক্তির ব্যবহার আরাফাত মোটর ড্রাইভিং ট্রেনিং স্কুলের একটি বড় বৈশিষ্ট্য। এখানে সিমুলেটর ব্যবহারের মাধ্যমে শিক্ষার্থীরা গাড়ি চালানোর আগে ভার্চুয়াল প্রশিক্ষণ নেওয়ার সুযোগ পায়। এটি শিক্ষার্থীদের বাস্তব গাড়ি চালানোর প্রস্তুতি নিতে সাহায্য করে এবং সড়কে যেকোনো ধরনের দুর্ঘটনা এড়াতে সহায়ক হয়। এছাড়াও, যানবাহনের বিভিন্ন প্রযুক্তিগত সমস্যার সমাধান করার জন্য শিক্ষার্থীদের মৌলিক মেকানিক্যাল জ্ঞান প্রদান করা হয়।
+
                                     </span>
                                 </li>
                                 <li className="flex gap-x-3">
                                     <span className="text-left">
                                         <strong className="font-semibold text-gray-900">  Values:  </strong>
 
-                                    <p>• Safety:Ensuring the highest standards of road safety in all training sessions.  </p>
-                                        <p> •  Professionalism: Delivering quality education with expert instructors.  </p>  
-                                       <p> •  Integrity: Maintaining honesty and ethical practices in all operations.  </p>  
-                                        <p> •  Responsibility: Teaching drivers to be responsible and aware on the road.  </p>
-                                         
-                                       <p> •  Innovation: Continuously improving training methods to stay aligned with global standards. </p> 
+                                    <p> <strong>শিক্ষার্থীদের জন্য আরেকটি বড় সুবিধা হলো,</strong> প্রশিক্ষণ শেষ করার পর তাদের দক্ষতার উপর সার্টিফিকেট সনদ প্রদান করা হয় যেটি নিজস্ব কর্মসংস্থানের সুযোগ তৈরি হয়। এছাড়াও সরকারি চাকুরি ও দেশের বাহিরে এই সার্টিফিকেট সনদ খুবই গুরুত্ব বহন করে। সার্টিফিকেট সনদ ওয়েব সাইট অনলাইনে ভেরিফাইড করার সুযোগ রয়েছে।
+এই প্রতিষ্ঠানটি বিভিন্ন চ্যালেঞ্জ মোকাবিলা করেও তাদের লক্ষ্য অর্জনে প্রতিশ্রুতিবদ্ধ। সড়ক দুর্ঘটনার হার কমানো, দক্ষ চালকের সংখ্যা বাড়ানো, এবং সড়ক নিরাপত্তা নিশ্চিত করা এর অন্যতম উদ্দেশ্য। তাদের এই প্রচেষ্টা দেশের পরিবহন খাতকে আরও উন্নত করতে সাহায্য করছে।
+সংক্ষেপে, আরাফাত মোটর ড্রাইভিং ট্রেনিং স্কুল একটি ব্যতিক্রমী প্রতিষ্ঠান, যা আন্তর্জাতিক মানের দক্ষ এবং পেশাদার চালক তৈরিতে গুরুত্বপূর্ণ ভূমিকা পালন করছে। এর আধুনিক প্রশিক্ষণ ব্যবস্থা, দক্ষ প্রশিক্ষক দল, এবং শিক্ষার্থীদের প্রতি যত্নশীল মনোভাব এই প্রতিষ্ঠানকে অনন্য করে তুলেছে। এটি কেবল একটি ড্রাইভিং স্কুল নয়; বরং এটি একটি শিক্ষার কেন্দ্র, যা সড়ক নিরাপত্তা এবং পেশাদারিত্বের মাধ্যমে দেশের পরিবহন খাতকে আরও সমৃদ্ধ করছে।
+</p> 
                                     </span>
                                 </li>
-                                <li className="flex gap-x-3">
-
-                                    <span className="text-left">
-                                        
-                                        Road accident in Bangladesh is one of the national problems. One of the main reasons for this is untrained unskilled drivers. Therefore, PATHWAY Driving Training School started its journey in 2018 with the aim of making efficient drivers to prevent accidents. It is part of the education and training department of the non-profit and development charity PATHWAY. PATHWAY's main mission is to support sustainable development and positive change through collaborative work around the world. PATHWAY is a member of Global Alliance of NGOs for Road Safety. 
-                                    </span>
-                                </li>
+                               
+                               
+                                
                             </ul>
-                            <p className="mt-8 text-left">
-                            PATHWAY Driving Training School provides training for cars, motorcycles and scooters. By providing well-planned curriculum and driving training under the supervision of experienced instructors, PATHWAY Driving Training School has become the leading training center in the country within a short span of time. There is an opportunity for various professionals to choose their convenient time or schedule. Training is provided in a women-friendly environment to strengthen the path of women's advancement. Here all trainees have to attend practical as well as compulsory theory classes. We have air-conditioned multimedia classrooms for theory training. 
-                            </p>
-                            <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900"></h2>
-                            <p className="mt-6 text-left">
-                            PATHWAY Driving Training School provides basic (short course) and advanced (long course) level driving training. For which we have a group of experienced trainers who are BRTA approved trainers. Also, we have experience working corporately with various organizations. PATHWAY Driving Training School certificates are awarded to those who successfully complete the course. Which plays an important role in the workplace. The trained persons from here are carrying out their professional duties with Tsunami in the country and abroad
-                            </p>
+                           
                         </div>
                     </div>
                 </div>

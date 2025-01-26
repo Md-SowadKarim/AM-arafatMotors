@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-import "aos/dist/aos.css";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 
 const CourseCard = ({data}) => {
   console.log(data)
 
-  
+  useEffect(()=>{
+    Aos.init({
+      duration:2000
+    });
+  })
+
 
 
  
@@ -14,7 +21,7 @@ const CourseCard = ({data}) => {
     <div>
       
       
-      <div class="rounded-lg border-2 border-blue-500  md:w-[320px] lg:w-auto   bg-gray-500 px-1 pt-2 shadow-sm  dark:bg-gray-900">
+      <div data-aos="fade-right"  class="rounded-lg border-2 border-blue-500  md:w-[320px] lg:w-auto   bg-gray-500 px-1 pt-2 shadow-sm  dark:bg-gray-900">
       <div
           className='
               aspect-square 
@@ -48,7 +55,7 @@ const CourseCard = ({data}) => {
     alt="Louvre" />
 </div>
         </div> */}
-        <div class="p-2 m-1 bg-gray-300 rounded-xl">
+        <div data-aos="fade-left" class="p-2 m-1 bg-gray-300 rounded-xl">
           <div class=" flex items-center justify-between ">
                        <div class="flex items-center  ">
             

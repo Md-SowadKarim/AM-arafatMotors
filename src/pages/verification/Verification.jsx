@@ -10,6 +10,7 @@ import VerificationCard from './VerificationCard'
 import DataTable from 'react-data-table-component'
 import { FaCalendarDay } from 'react-icons/fa'
 import { Helmet } from 'react-helmet-async'
+import Container from '../../components/shared/Container'
 
 
 const Verification = () => {
@@ -147,6 +148,8 @@ const data= useLoaderData()
             
                 </Helmet>
         <Tittle first="Verify Your" second="Student" thired="Check out the position now.."/>
+        <h5 class="mb-2 text-2xl font-bold tracking-tight mx-auto text-center text-gray-900 dark:text-white">ভেরিফিকেশনের জন্য জন্ম তারিখ আপডেট রাখুন </h5>
+     
      <form onSubmit={handleSubmit}  className="max-w-md mx-auto">   
     <label for="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
     <div className="relative text-center">
@@ -169,11 +172,12 @@ const data= useLoaderData()
     <VerificationCard />
   })
 }
+<Container>
 <DataTable className=' bg-red-600 dark:bg-gray-900'
            columns={columns}
           
            data={order}
-       /> 
+       /> </Container>
     </div>
   )
 }

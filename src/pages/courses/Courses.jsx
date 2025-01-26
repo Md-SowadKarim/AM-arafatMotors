@@ -6,12 +6,20 @@ import CourseCard from './CourseCard'
 import { Helmet } from 'react-helmet-async'
 import Container from '../../components/shared/Container'
 import Tittle from '../../components/shared/tittle/Tittle'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 
 const Courses = () => {
   const[load,setLoad]=useState(false)
   const [bios,setBios]=useState([])
 //     const data=useLoaderData()
 //   console.log(data)
+useEffect(()=>{
+  Aos.init({
+    duration:2000
+  });
+})
 
   console.log(load)
 
@@ -61,7 +69,7 @@ const Courses = () => {
    {/* <Tittle first="Get Your" second="Product" thired=" With Crazy😮 Discounts.. "/> */}
           <div className='pt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4'> 
    
-          { bios.map((data)=><CourseCard key={data.cid} data={data}/>)}
+          { bios.map((data)=><CourseCard data-aos="fade-right"  key={data.cid} data={data}/>)}
    
   </div>
   </div>

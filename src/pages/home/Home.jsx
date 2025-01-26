@@ -14,6 +14,7 @@ import Loader from '../../components/shared/Loader'
 import CourseCard from '../courses/CourseCard'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
+import Owner from './Owner'
 
 
 const Home = () => {
@@ -66,7 +67,7 @@ const Home = () => {
 <MasterTheSkills></MasterTheSkills>
 
 <ImgGallary></ImgGallary>
-
+<Owner/>
 <Achive></Achive>
 
  <Cartified></Cartified>

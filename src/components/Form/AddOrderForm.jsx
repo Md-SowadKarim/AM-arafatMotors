@@ -2,7 +2,7 @@ import React from 'react'
 import { TbFidgetSpinner } from 'react-icons/tb';
 
 const AddOrderFrom = ({
-  handleImageChange,
+ // handleImageChange,
   uploadButtonText,
   handleSubmit
 
@@ -19,7 +19,7 @@ const AddOrderFrom = ({
         <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
             <div className="sm:col-span-2">
                 <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Name</label>
-                <input  type="text" name="name" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="আপনার নাম" required=""/>
+                <input required  type="text" name="name" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="আপনার নাম" />
             </div>
             {/* <div className="sm:col-span-2">
                 <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Email</label>
@@ -33,18 +33,19 @@ const AddOrderFrom = ({
         
             <div>
                 <label for="phone1" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number 1</label>
-                <input  type='text'  name="phone1" id="phone1" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="১ম ফোন নাম্বার" required=""/>
+                <input required type='text'  name="phone1" id="phone1" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="১ম ফোন নাম্বার" />
             </div> 
             <div>
                 <label for="phone2" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone Number 2</label>
-                <input  type='text'  name="phone2" id="phone2" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="২য় ফোন নাম্বার" required=""/>
+                <input required type='text'  name="phone2" id="phone2" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="২য় ফোন নাম্বার" />
             </div> 
             <div className="sm:col-span-2">
             <div className=' p-4 bg-white w-full  m-auto rounded-lg'>
               <div className='file_upload px-5 py-3 relative border-4 border-dotted border-gray-300 rounded-lg'>
                 <div className='flex flex-col w-max mx-auto text-center'>
                   <label> 
-                    <input
+                    {/* <input
+                     required
                       onChange={e => handleImageChange(e.target.files[0])}
                       className='text-sm cursor-pointer w-36 hidden'
                       type='file'
@@ -52,8 +53,17 @@ const AddOrderFrom = ({
                       id='image'
                       accept='image/*'
                       hidden
-                    />
-                    <div className='bg-rose-500 text-white border border-gray-300 rounded font-semibold cursor-pointer p-1 px-3 hover:bg-rose-500'>
+                     
+                    /> */}
+                     <input
+                     // onChange={e => handleImageChange(e.target.files[0])}
+                required
+                type='file'
+                id='image'
+                name='image'
+                accept='image/*'
+              />
+                    <div className='bg-blue-500 text-white border border-gray-300 rounded font-semibold cursor-pointer p-1 px-3 hover:bg-rose-500'>
                     {uploadButtonText}
                     </div>
                   </label>
@@ -66,24 +76,24 @@ const AddOrderFrom = ({
         
             <div>
                 <label for="fname" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Fathers Name</label>
-                <input  type='text' min="1000" name="fname" id="fname" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="পিতার নাম" required=""/>
+                <input required type='text'  name="fname" id="fname" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="পিতার নাম" />
             </div> 
              <div>
                 <label for="mname" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">"Mothers Name"</label>
-                <input  type='text' name="mname" id="mname" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="মাতার নাম" />
+                <input required type='text' name="mname" id="mname" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="মাতার নাম" />
             </div> 
              <div>
                 <label for="address" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Address</label>
-                <input  type='text' name="address" id="address" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="ঠিকানা" />
+                <input required type='text' name="address" id="address" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="ঠিকানা" />
             </div> 
             
              <div>
                 <label for="emergency" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Emergency Contact</label>
-                <input  type='text' name="emergency" id="emergency" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="জরুরি যোগাযোগ " />
+                <input required  type='text' name="emergency" id="emergency" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="জরুরি যোগাযোগ " />
             </div> 
              <div>
                 <label for="sdate" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Starting Date</label>
-                <input  type='date' name="sdate" id="sdate" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="কোর্স শুরুর তারিখ" />
+                <input required type='date' name="sdate" id="sdate" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="কোর্স শুরুর তারিখ" />
             </div> 
              <div>
                 <label for="cupon" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Cupon</label>

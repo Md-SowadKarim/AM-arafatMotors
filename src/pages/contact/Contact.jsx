@@ -3,23 +3,23 @@ import Container from '../../components/shared/Container'
 import Tittle from '../../components/shared/tittle/Tittle'
 import { FaFacebook, FaInstagram, FaPinterest } from 'react-icons/fa'
 import Map from './Map'
-
+import emailjs from '@emailjs/browser';
 import { Helmet } from 'react-helmet-async';
 import image from "../../image/Contact.jpg"
-
+import toast from 'react-hot-toast';
 const Contact = () => {
   const handleSubmit=(e)=>{
     e.preventDefault();
 
-    // emailjs.sendForm('service_8i23xxx', 'template_1ykf0qm', e.target, 'jqUQJUpQWNw_aSBwy')
-    //   .then((result) => {
-    //       console.log(result.text);
-		//   toast.success("Mail send successfully")
-    //   }, (error) => {
-    //       console.log(error.text);
-		//   toast.error("Invaild Email")
-    //   });
-    //   e.target.reset()
+    emailjs.sendForm('service_futi6ie', 'template_wyu80ia', e.target, 'dl6TgV9AzDXfHTnUS')
+      .then((result) => {
+          console.log(result.text);
+		  toast.success("Mail send successfully")
+      }, (error) => {
+          console.log(error.text);
+		  toast.error("Invaild Email")
+      });
+      e.target.reset()
   }
   return (
     <div>
@@ -50,36 +50,28 @@ const Contact = () => {
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6 text-blue-500">
 						<path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"></path>
 					</svg>
-					<span>Dhaka, Bangladesh</span>
+					<span> Badamtala,seramoni,  khulna</span>
 				</p>
 				<p className="flex items-center">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6 text-blue-500">
 						<path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
 					</svg>
-					<span>+8801912536120</span><br/>
-				
+					<span>+8801912-536120</span><br/>
 				</p>
+		
         <p className="flex items-center">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6 text-blue-500">
 						<path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
 					</svg>
 				
-					<span>+8801705259002</span><br/>
-				
-				</p>
-        <p className="flex items-center">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6 text-blue-500">
-						<path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-					</svg>
-				
-					<span>+8801954585500</span>
+					<span>+8801954-585500</span>
 				</p>
 				<p className="flex items-center">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6 text-blue-500">
 						<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
 						<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
 					</svg>
-					<span>arafat.amdts@gmail.com</span>
+					<span>arafat.amdts2025@gmail.com</span>
 				</p>
 			</div>
             <div className="p-6 flex gap-3">
@@ -100,7 +92,7 @@ const Contact = () => {
 			</label>
 			<label className="block">
 				<span className="mb-1">Message</span>
-				<textarea rows="3" placeholder=' Message' required name="  Message" className="text-white dark:text-black dark:placeholder:text-gray-900 block w-full rounded-md focus:ring focus:ri focus:ri border-2 dark:bg-gray-100 bg-gray-900 border-blue-500"></textarea>
+				<textarea rows="3" placeholder=' Message' required id='message' name="message" className="text-white dark:text-black dark:placeholder:text-gray-900 block w-full rounded-md focus:ring focus:ri focus:ri border-2 dark:bg-gray-100 bg-gray-900 border-blue-500"></textarea>
 			</label>
 			<button type="submit" value="Send" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ri bg-blue-500  focus:ri hover:ri">Submit</button>
 		</form>

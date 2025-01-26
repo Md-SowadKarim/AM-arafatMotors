@@ -70,7 +70,7 @@ console.log(data)
         
             <div>
                 <label for="price" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Price (BDT)</label>
-                <input defaultValue={data.price} type='number' min="1000" name="price" id="price" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="You are willing to pay" required=""/>
+                <input defaultValue={data.price} type='number'  name="price" id="price" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="You are willing to pay" required=""/>
             </div> 
              <div>
                 <label for="duration" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Duration</label>
@@ -78,7 +78,7 @@ console.log(data)
             </div> 
             <div>
                 <label for="lesson" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Total Lesson</label>
-                <input defaultValue={data.lesson} type='number' min="20" name="lesson" id="lesson" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="You are willing to pay" required=""/>
+                <input defaultValue={data.lesson} type='number'  name="lesson" id="lesson" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="You are willing to pay" required=""/>
             </div> 
             <div>
                 <label for="cid" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Course Id</label>

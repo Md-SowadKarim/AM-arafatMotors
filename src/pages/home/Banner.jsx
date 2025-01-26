@@ -4,7 +4,18 @@ import image1 from "../../assets/image/graduated.png"
 import image2 from "../../assets/image/online-learning.png"
 import image3 from "../../assets/image/students.png"
 import image4 from "../../assets/image/branch.png"
+import car from "../../assets/image/carSlide.jpg"
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
+import { useEffect } from 'react';
 const Banner = () => {
+  useEffect(()=>{
+    Aos.init({
+      duration:2000
+    });
+  })
+
   return (
     <div>
 
@@ -15,36 +26,43 @@ const Banner = () => {
 */}
 {/* bg-[url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)] */}
       <section
-        className="relative  bg-cover bg-red-400 bg-center bg-no-repeat"
+        className="relative bg-cover bg-[url(https://i.imghippo.com/files/lNjk4995c.jpg)]  bg-center bg-no-repeat rounded-xl"
       >
+        
         <div
-          className="absolute inset-0 bg-gray-900/75 sm:bg-transparent sm:from-gray-900/95 sm:to-gray-900/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
+          className={`absolute  inset-0 bg-gray-900/75 sm:bg-transparent sm:from-gray-900/95 sm:to-gray-900/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-`}
         ></div>
-
         <div
-          className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex  lg:items-center lg:px-8"
+          className="relative mx-auto lg:pt-44 text-center max-w-screen-xl px-4 py-32 sm:px-6 lg:flex gap-6  lg:items-center lg:px-8"
         >
-          <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+          <div className="max-w-xl lg:w-[50%] text-center ltr:sm:text-left rtl:sm:text-right">
            <div className="mt-8 flex flex-wrap gap-4 text-center">
               <a
                 href="#"
-                className="block w-full lg:ml-36 bg-red-600  rounded-full bg-rose- px-12 py-3 text-sm font-medium text-white shadow focus:outline-none focus:ring  sm:w-auto"
+                className="block w-full lg:ml-8 bg-red-600 text-2xl rounded-full bg-rose- px-12 py-3  font-medium text-white shadow focus:outline-none focus:ring  sm:w-auto"
               >
-               Under experienced instructors
+               কম খরছে অরিজিনাল লাইসেন্স সহ ড্রাইভিং শিখানো হয়।
+
+
               </a>
 
             </div>
-            <h1 className="text-3xl font-extrabold text-white sm:text-5xl">
-            Learn to Drive with Confidence
+            <h1 className="text-3xl font-extrabold text-white my-2 sm:text-5xl">
+            মহিলাদের প্রশিক্ষণের জন্য সু ব্যবস্থা আছে।
 
             </h1>
 
-            <p className="mt-4 max-w-lg text-white sm:text-xl/relaxed">
-            We ensure the planned training modules and the safety of the trainees.
+            <p data-aos="zoom-in-down" className="mt-8 lg:ml-6 max-w-lg text-red-500 bg-white  font-bold text-xl/relaxed">
+           Arafat Motor Driving Training School
             </p>
 
          
           </div>
+          <div className='lg:w-[50%] text-center '>
+          <img data-aos="fade-right" className='w-full h-auto mx-auto mt-4' src={car} alt="" />
+          </div>
+          
+          
         </div>
       </section>
 

@@ -64,7 +64,7 @@ refetch()
           toast.success('Course Updated!')
           refetch()
         //   window.location.reload();
-          navigate("/dashboard/manage-order")
+          navigate("/dashboard/manage-course")
         
         
         } catch (err) {

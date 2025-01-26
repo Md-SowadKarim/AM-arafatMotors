@@ -110,9 +110,9 @@ const Buy = () => {
    }
 
      // Handle Image button text
-  const handleImageChange = image => {
-    setUploadButtonText(image.name)
-  }
+  // const handleImageChange = image => {
+  //   setUploadButtonText(image.name)
+  // }
 if(loading) return <Loader/>
 // else if(data.stock == 1){
 //   <h1>stock out</h1>
@@ -175,9 +175,9 @@ else
       </div>
     </div>
   </section>
-  <AddOrderFrom handleImageChange={handleImageChange}
+  <AddOrderFrom 
         
-        uploadButtonText={uploadButtonText}   handleSubmit={handleSubmit} />
+           handleSubmit={handleSubmit} />
   </Container>
  
    

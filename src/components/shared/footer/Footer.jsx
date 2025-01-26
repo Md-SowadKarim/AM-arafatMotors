@@ -1,7 +1,16 @@
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 import { Link } from 'react-router-dom';
 import logoImg from '../../../assets/image/logo3.png'
+import { useEffect } from 'react';
 const Footer = () => {
+    useEffect(()=>{
+        Aos.init({
+          duration:2000
+        });
+      })
+    
     return (
         <footer className="bg-white">
         <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-5 lg:pt-24">
@@ -9,7 +18,8 @@ const Footer = () => {
                 <div>
                       {/* Logo */}
                       <Link to='/'>
-                                      <div className='flex  items-center relative'>
+                                      <div data-aos="fade-left"  className='flex  items-center relative'>
+                                        
                                       <img
                                       //  className='hidden md:block '
                                         src={logoImg}
@@ -33,7 +43,7 @@ const Footer = () => {
                         className=" max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left"
                     >
 
-                      Arafat Driving Training School is a BRTA registered Driving Training Centre. [Reg. No: 116/2018] It is the first and only driving school in Bangladesh that has its own learning management software (LMS).
+                      Arafat Driving Training School is a BRTA registered Driving Training Centre. [Reg. No: 139/2019] It is the first and only driving school in Bangladesh that has its own learning management software (LMS).
                     </p>
 
                     <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
@@ -255,7 +265,30 @@ const Footer = () => {
                                         />
                                     </svg>
 
-                                    <span className="flex-1 text-gray-700">01540124443</span>
+                                    <span className="flex-1 text-gray-700">01912-536102</span>
+                                    
+                                </a>
+                                <a
+                                    className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                                    href="/"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className="h-5 w-5 shrink-0 text-gray-900"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                        strokeWidth="2"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                                        />
+                                    </svg>
+
+                                    <span className="flex-1 text-gray-700">01954-585500</span>
+                                    
                                 </a>
                             </li>
 
