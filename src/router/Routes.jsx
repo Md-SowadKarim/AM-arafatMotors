@@ -42,9 +42,9 @@ import AuthProvider from "../providers/AuthProvider";
 import AdminRoute from './AdminRoute';
 import PrivateRoute from './PrivateRoute';
 import OrderDetails from "../pages/orderDetails/OrderDetails";
-import Learn from "../pages/home/Learn";
+import Learn1 from "../pages/home/Learn1";
 import Learn2 from "../pages/home/Learn2";
-import Learn1 from "../pages/home/learn1";
+
 
 
   
