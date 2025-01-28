@@ -13,10 +13,10 @@ const Learn = () => {
                 </span>
         <div>
             <div className='md:flex justify-between gap-2'>
-                <Link className='flex-1 hover:bg-blue-500 hover:text-white border-4 border-red-500 p-1 rounded-xl h-auto py-4 animate-bounce' to="/sign1">
+                <Link className='flex-1 hover:bg-blue-500 hover:text-white md:border-4 md:border-red-500 p-1 rounded-xl h-auto py-4 animate-bounce' to="/sign1">
                 <div className='flex-1 hover:bg-blue-500 hover:text-white border-4 border-red-500 p-1 rounded-xl h-auto py-4 animate-bounce'><h1 className='font-bold text-center'>LEARNING FORM ONE</h1></div>
                 </Link>
-                <Link className='flex-1 hover:bg-blue-500 hover:text-white border-4 border-red-500 p-1 rounded-xl h-auto py-4 ' to="/sign2">
+                <Link className='flex-1 hover:bg-blue-500 hover:text-white md:border-4 md:border-red-500 p-1 rounded-xl h-auto py-4 ' to="/sign2">
                 <div className='flex-1 hover:bg-blue-500 hover:text-white border-4 border-red-500 p-1 rounded-xl h-auto py-4'><h1 className='font-bold text-center'>LEARNING FORM TWO</h1></div>
                 </Link>
             </div>
