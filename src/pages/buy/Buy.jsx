@@ -13,12 +13,13 @@ import { getOneUser } from '../../api/auth'
 import { useQuery } from '@tanstack/react-query'
 import { imageUpload } from '../../api/utils'
 import Container from '../../components/shared/Container'
+import payment from "../../assets/image/payment.png"
 
 const Buy = () => {
   const navigate=useNavigate()
   const { user } = useAuth()
   const[loading,setLoading]=useState(false)
-  const [uploadButtonText, setUploadButtonText] = useState('NID or Birth-Certificate')
+  const [uploadButtonText, setUploadButtonText] = useState('Upload NID or BC')
     const data=useLoaderData()
     const { data: oneUser={} , } = useQuery({
       queryKey: ['oneUser'],
@@ -110,9 +111,9 @@ const Buy = () => {
    }
 
      // Handle Image button text
-  // const handleImageChange = image => {
-  //   setUploadButtonText(image.name)
-  // }
+  const handleImageChange = image => {
+    setUploadButtonText(image.name)
+  }
 if(loading) return <Loader/>
 // else if(data.stock == 1){
 //   <h1>stock out</h1>
@@ -130,12 +131,12 @@ else
                 </Helmet> */}
                 <Container>
      <section class="py-8 bg-white md:py-16 dark:bg-gray-900 antialiased">
-    <div class="max-w-screen-xl border-2 border-blue-500 rounded-xl px-4 mx-auto 2xl:px-0">
+    <div class="max-w-screen-xl border-2 border-blue-500 rounded-xl px-4 py-1 mx-auto 2xl:px-0">
       <div class="lg:grid lg:grid-cols-2  lg:gap-8 xl:gap-16">
       <div class="relative max-w-xs  items-center text-center mx-auto  overflow-hidden rounded-xl bg-cover bg-no-repeat">
   <img
     src={data.image}
-    class="max-w-xs transition   duration-300 ease-in-out hover:scale-110"
+    class=" transition   duration-300 ease-in-out hover:scale-110"
     alt="Louvre" />
 </div>
 
@@ -147,7 +148,7 @@ else
           </h1>
           <div class="mt-4 sm:items-center sm:gap-4 sm:flex">
           <div className='flex items-center gap-2'>
-            <p class="text-4xl font-extrabold leading-tight animate-bounce text-orange-500">{data.price} Tk</p>
+            <p class="text-4xl font-extrabold leading-tight  text-orange-500">{data.price} Tk</p>
             {/* <span class="text-sm text-slate-900  dark:text-gray-400 line-through">{data.lesson} TK</span> */}
           </div>
           {/* {
@@ -166,6 +167,18 @@ else
           <div>
             <h1 className=' dark:text-blue-500 mt-2 font-extrabold  text-xl text-blue-600'> Mechanical : {data.mechanical}</h1>
           </div>
+          <div className='border-2 border-black mr-2 bg-gray-400 rounded-xl my-2 text-center p-1 animate-pulse'>
+            <h1 className=' dark:text-blue-500 mt-2 font-extrabold  text-xl text-blue-600'> Make Booking Payment</h1>
+            <div className='md:flex items-center justify-center gap-2'>
+            <div className='h-20 w-20 mx-auto md:mx-0 m-1'>
+              <img className='w-full h-full rounded-3xl ' src={payment} alt="" />
+            </div>
+            <h1 className=' dark:text-blue-500 mt-2 font-extrabold  text-xl text-blue-600'> 01954585500</h1>
+           
+            </div>
+           
+          </div>
+
         
 
          
@@ -176,8 +189,11 @@ else
     </div>
   </section>
   <AddOrderFrom 
-        
+        uploadButtonText={uploadButtonText}
+        handleImageChange={handleImageChange}
            handleSubmit={handleSubmit} />
+
+           
   </Container>
  
    

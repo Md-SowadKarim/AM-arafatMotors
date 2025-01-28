@@ -15,6 +15,7 @@ import CourseCard from '../courses/CourseCard'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import Owner from './Owner'
+import Learn from './Learn'
 
 
 const Home = () => {
@@ -62,7 +63,7 @@ const Home = () => {
    
      
   
-     
+     <Learn/>
      
 <MasterTheSkills></MasterTheSkills>
 

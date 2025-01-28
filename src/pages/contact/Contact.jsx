@@ -41,7 +41,7 @@ const Contact = () => {
     </section>
     <section className="py-8 dark:bg-gray-900 dark:text-gray-100  mx-auto text-center ">
         
-	<div className=" max-w-6xl grid-cols-1 px-6 mx-auto  lg:px-8 md:grid-cols-2 gap-4   md:flex w-[95%] ">
+	<div className=" max-w-6xl grid-cols-1 md:px-6 mx-auto  lg:px-8 md:grid-cols-2 gap-4   md:flex w-[95%] ">
 		<div className="py-6 md:py-0 md:px-6 w-[95%] flex flex-col items-center justify-center border-2 border-blue-500 rounded-xl text-center ">
 			<h1 className="text-4xl font-bold text-blue-500">Get in touch</h1>
 			<p className="pt-2 pb-4">Fill in the form to start a conversation</p>
@@ -50,7 +50,7 @@ const Contact = () => {
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6 text-blue-500">
 						<path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"></path>
 					</svg>
-					<span> Badamtala,seramoni,  khulna</span>
+					<span> Badamtala,Siromoni, Khulna</span>
 				</p>
 				<p className="flex items-center">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6 text-blue-500">

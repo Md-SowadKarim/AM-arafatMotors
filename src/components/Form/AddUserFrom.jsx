@@ -29,7 +29,7 @@ const AddUserFrom = ({
           
             <div className="sm:col-span-2">
             <div className=' p-4 bg-white w-full  m-auto rounded-lg'>
-              <div className='file_upload px-5 py-3 relative border-4 border-dotted border-gray-300 rounded-lg'>
+              <div className='file_upload  py-3 relative border-4 border-dotted border-gray-300 rounded-lg'>
                 <div className='flex flex-col w-max mx-auto text-center'>
                   <label>
                   <input
@@ -40,9 +40,7 @@ const AddUserFrom = ({
                 name='image'
                 accept='image/*'
               />
-                    <div className='bg-blue-500 mt-1 text-white border border-gray-300 rounded font-semibold cursor-pointer p-1 px-3 hover:bg-rose-500'>
-                    {uploadButtonText}
-                    </div>
+                    
                   </label>
                 </div>
               </div>

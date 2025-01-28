@@ -20,7 +20,7 @@ const Navbar = () => {
                 width='150'
                 height='120'
               />
-              <h1 className='absolute left-12 '>r</h1>
+              <h1 className='absolute left-12 '></h1>
               </div>
               
               

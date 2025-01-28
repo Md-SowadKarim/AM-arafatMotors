@@ -32,7 +32,7 @@ console.log(data)
                 <div className='flex flex-col w-max mx-auto text-center'>
                   <label>
                   <div className='h-full w-full'>
-                    <img className='h-full w-80 mb-2' src={data.image} alt="" />
+                    <img className='w-40 md:w-80 mb-2' src={data.image} alt="" />
                     </div>
                     <div className='bg-rose-500 text-white border border-gray-300 rounded font-semibold cursor-pointer p-1 px-3 hover:bg-rose-500'>
                     {data.title}

@@ -39,16 +39,23 @@ const Banner = () => {
            <div className="mt-8 flex flex-wrap gap-4 text-center">
               <a
                 href="#"
-                className="block w-full lg:ml-8 bg-red-600 text-2xl rounded-full bg-rose- px-12 py-3  font-medium text-white shadow focus:outline-none focus:ring  sm:w-auto"
+                className="block w-full lg:ml-8 bg-red-600 md:text-2xl rounded-full bg-rose- px-12 py-3  font-medium text-white shadow focus:outline-none focus:ring  sm:w-auto"
               >
-               কম খরছে অরিজিনাল লাইসেন্স সহ ড্রাইভিং শিখানো হয়।
+               স্বল্প খরচে বৈধ ড্রাইভিং লাইসেন্সের কাজে সহায়তা সহ ড্রাইভিং শেখানো হয়।
+
 
 
               </a>
 
             </div>
             <h1 className="text-3xl font-extrabold text-white my-2 sm:text-5xl">
-            মহিলাদের প্রশিক্ষণের জন্য সু ব্যবস্থা আছে।
+            মহিলাদের প্রশিক্ষণের জন্য সু ব্যবস্থা আছে। 
+
+
+            </h1>
+            <h1 className="text-3xl font-extrabold bg-blue-500 p-2 rounded-xl text-white my-2 sm:text-5xl">
+            এখানে আবাসনের সুব্যবস্থা রয়েছে।
+
 
             </h1>
 
@@ -77,10 +84,10 @@ const Banner = () => {
               <p className="text-3xl font-semibold leadi">
                 <CountUp
                   start={0}
-                  end={5237}
+                  end={1200}
                   duration={5}
                 >
-                  5237
+                  1200
 
                 </CountUp>
 
@@ -96,7 +103,7 @@ const Banner = () => {
               <p className="text-3xl font-semibold leadi">
                 <CountUp
                   start={0}
-                  end={7}
+                  end={5}
                   duration={5}
                 >
                   7
@@ -115,7 +122,7 @@ const Banner = () => {
               <p className="text-3xl font-semibold leadi">
                 <CountUp
                   start={0}
-                  end={127}
+                  end={35}
                   duration={5}
                 >
                   127

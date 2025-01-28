@@ -1,6 +1,7 @@
 import image from "../../../public/image/rana sp.jpg"
 import image2 from "../../../public/image/Sabbir Hosain .jpg"
 import image3 from "../../../public/image/Tanvir Hosain.jpg"
+import image4 from "../../assets/e/e7.jpg"
 
 const TrustUs = () => {
 
@@ -63,6 +64,26 @@ const TrustUs = () => {
             {/*  */}
             <div className="flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md dark:bg-gray-900 dark:text-gray-100">
               <div className="flex space-x-1">
+                <img alt="" src={image4} className="object-cover w-12 h-12 rounded-full shadow dark:bg-gray-500" />
+                <div className="flex flex-col space-y-1">
+                  <a rel="noopener noreferrer" href="#" className="text-xl font-semibold">Rakib Hossain</a>
+                  
+            
+                </div>
+              </div>
+              <div>
+
+
+                <p className="text-xl text-start dark:text-black font-semibold">আরাফাত ড্রাইভিং স্কুলে ভর্তি করা আমার ড্রাইভিং শিক্ষার জন্য সত্যিই একটি ভাল সিদ্ধান্ত ছিল। নির্দেশনা ছিল অবিশ্বাস্য দক্ষ আর শিক্ষণ .তাদের একটি সহায়ক শিক্ষার পরিবেশ রয়েছে যা আমাকে প্রশ্ন জিজ্ঞাসা করতে এবং কোনো ভুল হলে আমাদের সংশোধন করতে দেয়।</p>
+              </div>
+
+            </div>
+
+          </div>
+          <div className="relative flex flex-shrink-0 w-full sm:w-auto">
+            {/*  */}
+            <div className="flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md dark:bg-gray-900 dark:text-gray-100">
+              <div className="flex space-x-1">
                 <img alt="" src={image2} className="object-cover w-12 h-12 rounded-full shadow dark:bg-gray-500" />
                 <div className="flex flex-col space-y-1">
                   <a rel="noopener noreferrer" href="#" className="text-xl font-semibold">Sabbir Hossain</a>
@@ -79,6 +100,7 @@ const TrustUs = () => {
             </div>
 
           </div>
+      
           <div className="relative flex flex-shrink-0 w-full sm:w-auto">
             {/*  */}
             <div className="flex flex-col max-w-lg p-6 space-y-6 overflow-hidden rounded-lg shadow-md dark:bg-gray-900 dark:text-gray-100">

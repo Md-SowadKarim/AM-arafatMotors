@@ -138,7 +138,7 @@ const WhyChoos = () => {
                                 </a>
 
                                 <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                                 Only PDTS follows international standard driving training and curriculum.
+                                 Only AMDTS follows international standard driving training and curriculum.
                                 </p>
 
                                 {/* <a href="#" className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">

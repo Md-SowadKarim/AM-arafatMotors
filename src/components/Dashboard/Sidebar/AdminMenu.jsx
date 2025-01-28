@@ -17,13 +17,14 @@ const AdminMenu = () => {
                     <div>
                   <MenuItem icon={FaUserCog} label='Add Blogs' address='add-blogs' />
                   <MenuItem icon={FaUserCog} label='Manage Blogs' address='manage-blogs' />
+                  <MenuItem icon={FaUserCog} label='Add Course' address='add-course' />
+                  <MenuItem icon={FaUserCog} label='Manage Course' address='manage-course' />
                  
                     </div>
                    
                   :""
                   }
-                  <MenuItem icon={FaUserCog} label='Add Course' address='add-course' />
-                  <MenuItem icon={FaUserCog} label='Manage Course' address='manage-course' />
+                 
                    
                   
                   {/* <MenuItem icon={FaUserCog} label='Statistics' address='statistics' /> */}

@@ -42,6 +42,10 @@ import AuthProvider from "../providers/AuthProvider";
 import AdminRoute from './AdminRoute';
 import PrivateRoute from './PrivateRoute';
 import OrderDetails from "../pages/orderDetails/OrderDetails";
+import Learn from "../pages/home/Learn";
+import Learn2 from "../pages/home/Learn2";
+import Learn1 from "../pages/home/learn1";
+
 
   
   const router = createBrowserRouter([
@@ -53,6 +57,13 @@ import OrderDetails from "../pages/orderDetails/OrderDetails";
         {
             path:"/",
             element: <Home/>
+        },
+        {
+            path:"/sign1",
+            element:<Learn1/>       },
+        {
+            path:"/sign2",
+            element: <Learn2/>
         },
        
         {
