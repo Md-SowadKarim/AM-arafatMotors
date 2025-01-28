@@ -60,7 +60,8 @@ import Learn1 from "../pages/home/learn1";
         },
         {
             path:"/sign1",
-            element:<Learn1/>       },
+            element:<Learn1/>  
+         },
         {
             path:"/sign2",
             element: <Learn2/>
