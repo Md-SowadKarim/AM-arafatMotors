@@ -53,7 +53,7 @@ const OrderDetails = () => {
     <div className=' text-center m-2 w-[80%] mx-auto flex justify-center items-center font-extrabold'>Arafat Motors Driving Training School</div>
 </div>
 <div className='text-center'>
-<button className='w-[50%] bg-red-500 rounded-xl mx-auto text-center h-10 hover:bg-blue-500 hover:text-white ' onClick={() => reactToPrintFn()}>print</button>
+<button className='w-[50%] bg-red-500 rounded-xl mx-auto text-center h-10 hover:bg-blue-500 hover:text-white font-bold text-xl ' onClick={() => reactToPrintFn()}>Print</button>
 
 </div>
 </Container>
