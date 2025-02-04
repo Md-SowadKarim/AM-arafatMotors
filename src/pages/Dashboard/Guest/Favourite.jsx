@@ -19,7 +19,7 @@ const Favourite = () => {
     enabled: !loading,
     queryFn: async () => await getAllFav(user?.email),
   })
-console.log(bookings)
+//console.log(bookings)
   if (isLoading) return <h1>Loading</h1>
   return (
     <>

@@ -2,14 +2,14 @@ import axiosSecure from '.'
 
 // add or update question data in db
 export const addCourse = async (courseData,cid) => {
-    console.log(courseData,cid,"data....................")
+    ////console.log(courseData,cid,"data....................")
    const { data } = await axiosSecure.put(`/course?cid=${cid}`, courseData)
    return data
   }
 
   export const getAllCourse = async () => {
     const { data } = await axiosSecure('/allcourse')
-    console.log(data)
+    ////console.log(data)
     return data
   }
 

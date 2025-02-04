@@ -2,7 +2,7 @@ import axiosSecure from '.'
 
 // add or update question data in db
 export const addProfile = async (profileData,sid) => {
-    console.log(profileData,sid)
+    ////console.log(profileData,sid)
     const { data } = await axiosSecure.put(`/profile?sid=${sid}`, profileData)
     return data
   }
@@ -10,9 +10,9 @@ export const addProfile = async (profileData,sid) => {
 
   // Get specific about profile
 export const getOneProfile = async email => {
-    console.log(email)
+    ////console.log(email)
     const { data } = await axiosSecure(`/oneProfile/${email}`)
-    console.log(data)
+    ////console.log(data)
     return data
   }
   export const deleteOneProfile = async sid => {

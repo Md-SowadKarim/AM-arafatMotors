@@ -8,16 +8,16 @@ const PremiumDataRow = ({ user,refetch }) => {
     const [bio,setBio]=useState()
 
   if(user){
-    console.log(user)
+    //console.log(user)
         getUserBiodata(user?.email)
         .then(data=>{
-         console.log(data)
+         //console.log(data)
          setBio(data.id)
         })
     
   }
    
-    console.log(bio)
+    //console.log(bio)
      
   
   const [isOpen, setIsOpen] = useState(false)
@@ -25,11 +25,11 @@ const PremiumDataRow = ({ user,refetch }) => {
   const handleMakePremiumClick = async () => {
     try {
       const data = await updateRole({ email: user?.email, role:"premium" })
-      console.log(data)
+      //console.log(data)
       refetch()
       toast.success('User become premium')
     } catch (err) {
-      console.log(err)
+      //console.log(err)
       toast.error(err.message)
     } finally {
       setIsOpen(false)

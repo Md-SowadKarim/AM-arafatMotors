@@ -11,14 +11,14 @@ import { useEffect, useState } from 'react'
 const StudentMenu = () => {
 
   const [role] = useRole()
-  console.log(role)
+  //console.log(role)
   const { user } = useAuth()
   const email =user?.email
   const rolee='teacher'
-console.log(user?.email)
+//console.log(user?.email)
   const handleClick=async()=>{
     const update=await updateRole({email,rolee})
-    console.log(update)
+    //console.log(update)
     window.location.reload()
   }
 

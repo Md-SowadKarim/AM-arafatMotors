@@ -53,12 +53,12 @@ const GotMarrid = () => {
 
     try {
       const data = await addGotMarrid(roomData,user.email)
-      console.log(data)
+      //console.log(data)
       setUploadButtonText('Uploaded!')
       toast.success('Biodata Added!')
 
     } catch (err) {
-      console.log(err)
+      //console.log(err)
       toast.error(err.message)
     } finally {
       setLoading(false)

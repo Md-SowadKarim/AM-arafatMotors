@@ -19,16 +19,16 @@ const ManageBlog = () => {
 //const [data,setData]=useState([])
 const [data2,setData2]=useState([])
     const data= useLoaderData()
-    console.log(data)
+    //console.log(data)
 
     // useEffect(() => {
     //   setLoad(true)
     //   getAllProduct()
     //   .then(data => {
-    //       console.log("data ",data)
+    //       //console.log("data ",data)
     //       setData(data)
-    //       console.log(data)
-    //       console.log("this is sowad")
+    //       //console.log(data)
+    //       //console.log("this is sowad")
     //     setLoad(false)
     //   })
     // },[])
@@ -46,25 +46,25 @@ const handleSubmit=async e=>{
    
  order2=blog.filter((od)=>od?.bid == s)
  setOrder(order2)
-console.log(order2)
-  console.log(s)
+//console.log(order2)
+  //console.log(s)
   
-  console.log(yes)
+  //console.log(yes)
    setLoad(false)
     
 }
 const handleSeeAll=()=>{
 
   setYes(true)
-  console.log(yes)
+  //console.log(yes)
   }
 const handdleDelete=async(bid)=>{
-    console.log(bid)
+    //console.log(bid)
     try{
       await deleteOneBlog(bid)
       refetch()
       }catch(err){
-          console.log(err.message)
+          //console.log(err.message)
       }
   
   }
@@ -119,7 +119,7 @@ const columns = [
       selector: row => (
           <div >
             <Link to={`edit-blog/${row.bid}`}>
-             <button className='bg-blue-600 px-4 py-3 rounded-lg text-white' onClick={e=> console.log("its clicked the edit button")}>Edit</button>
+             <button className='bg-blue-600 px-4 py-3 rounded-lg text-white' onClick={e=> //console.log("its clicked the edit button")}>Edit</button>
              </Link>
           </div>
           )

@@ -20,9 +20,9 @@ const EditCourse = () => {
         queryKey: ['oneCourse'],
         queryFn: async () => await getOneCourse(d.cid), 
       })
-      console.log(course)
-    console.log(d.cid)
-    console.log(data)
+      //console.log(course)
+    //console.log(d.cid)
+    //console.log(data)
 refetch()
     const handleSubmit = async e => {
         setLoad(true)
@@ -59,7 +59,7 @@ refetch()
     
         try {
           const data = await addCourse(courseData,cid)
-          console.log(data)
+          //console.log(data)
           setUploadButtonText('Uploaded!')
           toast.success('Course Updated!')
           refetch()
@@ -68,7 +68,7 @@ refetch()
         
         
         } catch (err) {
-          console.log(err)
+          //console.log(err)
           toast.error(err.message)
         } finally {
           setLoad(false)

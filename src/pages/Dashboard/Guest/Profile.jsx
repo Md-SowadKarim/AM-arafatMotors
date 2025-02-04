@@ -14,10 +14,10 @@ const Profile = () => {
   const navigate = useNavigate()
    const { user } = useAuth()
    const [preProfile,isLoading]=useAbout()
-   console.log(preProfile)
+   //console.log(preProfile)
 
-  console.log(isLoading)
-   console.log(user)
+  //console.log(isLoading)
+   //console.log(user)
   //  const {role,isLoading}=useRole(user.email)
   const [loading, setLoading] = useState(false)
   const [uploadButtonText, setUploadButtonText] = useState('Upload Image')
@@ -82,12 +82,12 @@ if(preProfile){
 
     try {
       const data = await addAbout(profileData,user?.email)
-      console.log(data)
+      //console.log(data)
       setUploadButtonText('Uploaded!')
       toast.success('Question Added!')
     
     } catch (err) {
-      console.log(err)
+      //console.log(err)
       toast.error(err.message)
     } finally {
       setLoading(false)

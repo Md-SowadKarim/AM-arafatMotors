@@ -15,8 +15,8 @@ const ContactUser = () => {
     queryFn: async () => await getAllBookings(),
   })
   const datas=users.filter((user)=>user.status==="pending")
-  console.log(datas)
-  console.log(users)
+  //console.log(datas)
+  //console.log(users)
 
 
   

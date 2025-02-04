@@ -29,11 +29,11 @@ const SignUp = () => {
 
       //3. Save username & profile photo
      await updateUserProfile(name, imageData?.data?.display_url)
-     console.log(result)
+     //console.log(result)
 
       //4. save user data in database
      const dbResponse = await saveUser(result?.user)
-     console.log(dbResponse)
+     //console.log(dbResponse)
       result.user.email
 
       //5. get token
@@ -41,7 +41,7 @@ const SignUp = () => {
      navigate(from, { replace: true })
       toast.success('Signup Successful')
     } catch (err) {
-      console.log(err)
+      //console.log(err)
       toast.error(err?.message)
     }
   }
@@ -54,14 +54,14 @@ const SignUp = () => {
 
       //4. save user data in database
       const dbResponse = await saveUser(result?.user)
-      console.log(dbResponse)
+      //console.log(dbResponse)
 
       //5. get token
       await getToken(result?.user?.email)
       navigate('/')
       toast.success('Signup Successful')
     } catch (err) {
-      console.log(err)
+      //console.log(err)
       toast.error(err?.message)
     }
   }

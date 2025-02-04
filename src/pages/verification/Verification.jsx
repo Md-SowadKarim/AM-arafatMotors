@@ -20,15 +20,15 @@ const Verification = () => {
         queryKey: ['verifyUser'],
         queryFn: async () => await getOneUser(email), 
       })
-      console.log(profile)
+      //console.log(profile)
    
       const [load,setLoad]=useState(false)
       
  
 
-      console.log(user)
+      //console.log(user)
 const data= useLoaderData()
-    console.log(data) 
+    //console.log(data) 
    
    const [order,setOrder]=useState([])
       var order2=[]
@@ -41,7 +41,7 @@ const data= useLoaderData()
       const  dob=form.dob.value
 
       const profile= await getOneUser(email)
-      console.log(profile)
+      //console.log(profile)
       if(!profile){
         toast.error("there is no profile with this email")
       }else if(profile.dob !== dob){
@@ -50,8 +50,8 @@ const data= useLoaderData()
         toast.success("profile matched successfully")
         order2=data.filter((od)=>od?.sid == profile.sid)
         setOrder(order2)
-       console.log(order2)
-       console.log(order)
+       //console.log(order2)
+       //console.log(order)
       }
  
 
@@ -105,7 +105,7 @@ const data= useLoaderData()
        selector: row => (
            <div >
              <Link to={`/orderDetails/${row.oid}`}>
-              <button className='bg-blue-600 px-4 py-3 rounded-lg text-white' onClick={e=> console.log("its clicked the edit button")}>Details</button>
+              <button className='bg-blue-600 px-4 py-3 rounded-lg text-white' onClick={e=> //console.log("its clicked the edit button")}>Details</button>
               </Link>
            </div>
            )

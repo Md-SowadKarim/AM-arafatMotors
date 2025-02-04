@@ -22,7 +22,7 @@ const EditBlogs = () => {
    
   const navigate = useNavigate()
    const { user } = useAuth()
-   console.log(user)
+   //console.log(user)
    const d=useParams()
    const { data: blog={} , refetch } = useQuery({
        queryKey: ['oneBlog'],
@@ -88,14 +88,14 @@ const EditBlogs = () => {
     try {
         
       const data = await addBlog(blogData,bid)
-      console.log(data)
+      //console.log(data)
     
       toast.success('Blogs Updated!')
       refetch()
       navigate("/dashboard/manage-blogs")
     
     } catch (err) {
-      console.log(err)
+      //console.log(err)
       toast.error(err.message)
     } finally {
       setLoading(false)

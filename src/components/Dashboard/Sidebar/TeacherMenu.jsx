@@ -12,10 +12,10 @@ const TeacherMenu = () => {
   const { user } = useAuth()
   const email =user?.email
   const rolee='student'
-console.log(user?.email)
+//console.log(user?.email)
   const handleClick=async()=>{
     const update=await updateRole({email,rolee})
-    console.log(update)
+    //console.log(update)
     window.location.reload()
   }
 

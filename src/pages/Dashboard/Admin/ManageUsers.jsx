@@ -15,7 +15,7 @@ const ManageUsers = () => {
     queryFn: async () => await getAllProfile(),
   })
 
-  console.log(profile)
+  //console.log(profile)
   const[load,setLoad]=useState(false) 
  
     const [yes,setYes]=useState(true)
@@ -31,25 +31,25 @@ const ManageUsers = () => {
     
   order2=profile.filter((od)=>od?.email == s)
   setOrder(order2)
- console.log(order2)
-   console.log(s)
+ //console.log(order2)
+   //console.log(s)
    
-   console.log(yes)
+   //console.log(yes)
     setLoad(false)
      
  }
  const handleSeeAll=()=>{
  
    setYes(true)
-   console.log(yes)
+   //console.log(yes)
    }
   const handdleDelete=async(sid)=>{
-      console.log(sid)
+      //console.log(sid)
       try{
         await deleteOneProfile(sid)
         refetch()
         }catch(err){
-            console.log(err.message)
+            //console.log(err.message)
         }
     
     }

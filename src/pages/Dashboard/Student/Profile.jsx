@@ -26,8 +26,8 @@ const Profile = () => {
     queryKey: ['oneUser'],
     queryFn: async () => await getOneUser(user?.email), 
   })
-  console.log(profile)
-  console.log(oneUser,"lllllllllllllllllllllllllllll")
+  //console.log(profile)
+  //console.log(oneUser,"lllllllllllllllllllllllllllll")
    const [preProfile,isLoading]=useProfile()
 
    var sid=""
@@ -94,14 +94,14 @@ const Profile = () => {
     try {
       const data = await addProfile(profileData,sid)
       const data2 = await updateDOB(host)
-      console.log(data)
-      console.log(data2)
+      //console.log(data)
+      //console.log(data2)
       setUploadButtonText('Uploaded!')
       toast.success('Profile Added!')
       navigate("/dashboard")
     refetch()
     } catch (err) {
-      console.log(err)
+      //console.log(err)
       toast.error(err.message)
     } finally {
       setLoading(false)

@@ -29,7 +29,7 @@ const Login = () => {
       navigate(from, { replace: true })
       toast.success('Login Successful')
     } catch (err) {
-      console.log(err)
+      //console.log(err)
       toast.error(err?.message)
     }
   }
@@ -43,14 +43,14 @@ const Login = () => {
 
       //4. save user data in database
      const dbResponse = await saveUser(result?.user)
-     console.log(dbResponse)
+     //console.log(dbResponse)
 
       //5. get token
       await getToken(result?.user?.email)
       navigate(from, { replace: true })
       toast.success('Login Successful')
     } catch (err) {
-      console.log(err)
+      //console.log(err)
       toast.error(err?.message)
     }
   }

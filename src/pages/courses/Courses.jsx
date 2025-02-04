@@ -14,29 +14,29 @@ const Courses = () => {
   const[load,setLoad]=useState(false)
   const [bios,setBios]=useState([])
 //     const data=useLoaderData()
-//   console.log(data)
+//   //console.log(data)
 useEffect(()=>{
   Aos.init({
     duration:2000
   });
 })
 
-  console.log(load)
+  //console.log(load)
 
   useEffect(() => {
       setLoad(true)
       getAllCourse()
       .then(data => {
-          console.log("data ",data)
+          //console.log("data ",data)
           setBios(data)
-          console.log(bios)
-          console.log("this is sowad")
+          //console.log(bios)
+          //console.log("this is sowad")
         setLoad(false)
       })
     },[])
 
 
-    console.log(bios)
+    //console.log(bios)
   if(load)return <Loader/>
   return (
     <div>

@@ -6,7 +6,7 @@ import 'aos/dist/aos.css'
 
 
 const CourseCard = ({data}) => {
-  console.log(data)
+  //console.log(data)
 
   useEffect(()=>{
     Aos.init({

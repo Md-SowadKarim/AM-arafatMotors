@@ -19,7 +19,7 @@ import { addBlog } from '../../../api/blogs';
 const AddBlogs = () => {
   const navigate = useNavigate()
    const { user } = useAuth()
-   console.log(user)
+   //console.log(user)
   //  const {role,isLoading}=useRole(user.email)
   const [loading, setLoading] = useState(false)
   const [uploadButtonText, setUploadButtonText] = useState('Upload Image')
@@ -82,14 +82,14 @@ const AddBlogs = () => {
     try {
         
       const data = await addBlog(blogData,bid)
-      console.log(data)
+      //console.log(data)
       setUploadButtonText('Uploaded!')
       setUploadButtonText2('Uploaded!')
       setUploadButtonText3('Uploaded!')
       toast.success('Blogs Added!')
     
     } catch (err) {
-      console.log(err)
+      //console.log(err)
       toast.error(err.message)
     } finally {
       setLoading(false)

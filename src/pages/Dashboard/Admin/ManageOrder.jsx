@@ -19,7 +19,7 @@ const ManageOrder = () => {
   const[load,setLoad]=useState(false)
 //const [data,setData]=useState([])
 const [data2,setData2]=useState([])
-//console.log("===========",yes)
+////console.log("===========",yes)
 
     
 
@@ -27,10 +27,10 @@ const [data2,setData2]=useState([])
     //   setLoad(true)
     //   getAllProduct()
     //   .then(data => {
-    //       console.log("data ",data)
+    //       //console.log("data ",data)
     //       setData(data)
-    //       console.log(data)
-    //       console.log("this is sowad")
+    //       //console.log(data)
+    //       //console.log("this is sowad")
     //     setLoad(false)
     //   })
     // },[])
@@ -47,25 +47,25 @@ const handleSubmit=async e=>{
    
  order2=course.filter((od)=>od?.email == s)
  setOrder(order2)
-console.log(order2)
-  console.log(s)
+//console.log(order2)
+  //console.log(s)
   
-  console.log(yes)
+  //console.log(yes)
    setLoad(false)
     
 }
 const handleSeeAll=()=>{
 
   setYes(true)
-  console.log(yes)
+  //console.log(yes)
   }
 const handdleDelete=async(oid)=>{
-    console.log(oid)
+    //console.log(oid)
     try{
       await deleteOneOrder(oid)
       refetch()
       }catch(err){
-          console.log(err.message)
+          //console.log(err.message)
       }
   
   }
@@ -112,7 +112,7 @@ const columns = [
       selector: row => (
           <div >
             <Link to={`edit-order/${row.oid}`}>
-             <button className='bg-blue-600 px-4 py-3 rounded-lg text-white' onClick={e=> console.log("its clicked the edit button")}>Edit</button>
+             <button className='bg-blue-600 px-4 py-3 rounded-lg text-white' onClick={e=> //console.log("its clicked the edit button")}>Edit</button>
              </Link>
           </div>
           )

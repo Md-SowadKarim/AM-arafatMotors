@@ -24,8 +24,8 @@ const EditOrder = () => {
         queryFn: async () => await getOneOrder(d.oid), 
       })
     const data=useLoaderData()
-    console.log("data........................",data)
-    console.log(order)
+    //console.log("data........................",data)
+    //console.log(order)
    
     const oid2=Math.floor(Math. random() * (99999999-10000000+1)) + 10000000
     const  oid="SID"+oid2
@@ -87,13 +87,13 @@ const EditOrder = () => {
     
 
       const data3 = await addOrder(orderData,data.oid)
-      console.log(data3)
+      //console.log(data3)
       toast.success('Order Updeted')
       refetch()
       navigate("/dashboard/manage-order")
      
     } catch (err) {
-      console.log(err)
+      //console.log(err)
       toast.error(err.message)
     } finally {
       setLoading(false)

@@ -13,7 +13,7 @@ const AdminDashboard = () => {
       getAdminStat().then(data => setStatData(data))
       setLoad(false)
     }, [])
-    console.log(statData)
+    //console.log(statData)
     if(load)return <Loader/>
   return (
     <div>

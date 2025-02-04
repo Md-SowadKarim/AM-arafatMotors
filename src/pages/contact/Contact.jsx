@@ -13,10 +13,10 @@ const Contact = () => {
 
     emailjs.sendForm('service_futi6ie', 'template_wyu80ia', e.target, 'dl6TgV9AzDXfHTnUS')
       .then((result) => {
-          console.log(result.text);
+          //console.log(result.text);
 		  toast.success("Mail send successfully")
       }, (error) => {
-          console.log(error.text);
+          //console.log(error.text);
 		  toast.error("Invaild Email")
       });
       e.target.reset()

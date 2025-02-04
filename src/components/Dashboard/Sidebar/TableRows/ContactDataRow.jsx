@@ -6,16 +6,16 @@ import useAuth from './../../../../hooks/useAuth';
 import { approveContact } from '../../../../api/bookings';
 const ContactDataRow = ({ user,refetch }) => {
   const [isOpen, setIsOpen] = useState(false)
-  console.log(user)
+  //console.log(user)
 
   const handleMakePremiumClick = async () => {
     try {
       const data = await approveContact({ email: user?.requestEmail, id:user?.profileId} )
-      console.log(data)
+      //console.log(data)
       refetch()
       toast.success('User become premium')
     } catch (err) {
-      console.log(err)
+      //console.log(err)
       toast.error(err.message)
     } finally {
       setIsOpen(false)

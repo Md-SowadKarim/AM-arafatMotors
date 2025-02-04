@@ -94,12 +94,12 @@ const Buy = () => {
     
 
       const data3 = await addOrder(orderData,oid)
-      console.log(data3)
+      //console.log(data3)
       toast.success('Order Completed')
       navigate("/thankyou")
      
     } catch (err) {
-      console.log(err)
+      //console.log(err)
       toast.error(err.message)
     } finally {
       setLoading(false)

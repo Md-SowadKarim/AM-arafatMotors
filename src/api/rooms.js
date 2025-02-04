@@ -20,14 +20,14 @@ export const getRoom = async id => {
 
 // Save a room data in db
 export const addBio = async (roomData,email) => {
-  console.log(roomData,email)
+  //console.log(roomData,email)
   const { data } = await axiosSecure.put(`/biodata?email=${email}`, roomData)
   return data
 }
 
 // Save a getmarrid data in db
 export const addGotMarrid = async( roomData,email) => {
-  console.log(roomData)
+  //console.log(roomData)
   const { data } = await axiosSecure.put(`/addmarrid?email=${email}`, roomData)
   return data
 }
@@ -42,7 +42,7 @@ export const getGotMarrid = async() => {
 // Save a room data in db
 export const addFav = async favitem => {
 
-  console.log(favitem)
+  //console.log(favitem)
   const { data } = await axiosSecure.post('/favourite', favitem)
   return data
 }
@@ -53,8 +53,8 @@ export const getFav = async (email,id) => {
 }
 
 export const getAllFav = async (email) => {
-  console.log("getFav=====",email)
+  //console.log("getFav=====",email)
   const { data } = await axiosSecure.get(`/allfavourite?email=${email}`)
-  console.log("getFav=====",data)
+  //console.log("getFav=====",data)
   return data
 }

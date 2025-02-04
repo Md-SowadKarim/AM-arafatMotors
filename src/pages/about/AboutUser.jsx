@@ -4,7 +4,7 @@ import Container from '../../components/shared/Container'
 
 const AboutUser = () => {
     const data=useLoaderData()
-    console.log(data,"this is iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii")
+    //console.log(data,"this is iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii")
 
     return (
     <Container>

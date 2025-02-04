@@ -14,8 +14,8 @@ const PremiumUser = () => {
     queryFn: async () => await getAllUsers(),
   })
   const datas=users.filter((user)=>user.status==="Requested")
-  console.log(datas)
-  console.log(users)
+  //console.log(datas)
+  //console.log(users)
 
 
   

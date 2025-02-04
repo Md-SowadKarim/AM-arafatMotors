@@ -6,7 +6,7 @@ import Container from '../../components/shared/Container'
 
 const CourseDetails = () => {
     const data=useLoaderData()
-    console.log(data)
+    //console.log(data)
 
   
   return (

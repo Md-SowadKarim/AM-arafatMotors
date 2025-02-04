@@ -4,15 +4,15 @@ import { updateRole } from '../../../../api/auth'
 import { toast } from 'react-hot-toast'
 const UserDataRow = ({ user,refetch }) => {
   const [isOpen, setIsOpen] = useState(false)
-  console.log(user)
+  //console.log(user)
   const handleMakeAdminClick = async () => {
     try {
       const data = await updateRole({ email: user?.email, role:"admin" })
-      console.log(data)
+      //console.log(data)
       refetch()
       toast.success('User become admin')
     } catch (err) {
-      console.log(err)
+      //console.log(err)
       toast.error(err.message)
     } finally {
       setIsOpen(false)
@@ -21,11 +21,11 @@ const UserDataRow = ({ user,refetch }) => {
   const handleMakePremiumClick = async () => {
     try {
       const data = await updateRole({ email: user?.email, role:"premium" })
-      console.log(data)
+      //console.log(data)
       refetch()
       toast.success('User become premium')
     } catch (err) {
-      console.log(err)
+      //console.log(err)
       toast.error(err.message)
     } finally {
       setIsOpen(false)

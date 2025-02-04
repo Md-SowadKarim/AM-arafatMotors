@@ -5,17 +5,17 @@ import { useQuery } from '@tanstack/react-query'
 
 const UserDetails = () => {
     const data=useLoaderData()
-    console.log(data)
+    //console.log(data)
     const [ord,setOrd]=useState([])
     const { data: order = [], refetch } = useQuery({
         queryKey: ['userOrderr'],
         queryFn: async () => await getAllOrder(),   
       })
         const[load,setLoad]=useState(false)
-      console.log(order)
+      //console.log(order)
       var order2=[]
      order2=order.filter((od)=>od?.email == data?.email)
-    console.log(order2)
+    //console.log(order2)
    
   return (
     <div>

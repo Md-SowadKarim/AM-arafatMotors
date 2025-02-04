@@ -15,21 +15,21 @@ const MyCourse = () => {
   //   queryFn: async () => await getAllOrder(),   
   // })
   const data=useLoaderData()
-  console.log(data)
+  //console.log(data)
     const[load,setLoad]=useState(false)
     const[ord,setOrd]=useState([])
       var order2=[]
  order2=data.filter((od)=>od?.email == user?.email)
-console.log(order2)
+//console.log(order2)
 //setOrd(order2)
 
   // const handdleDelete=async(cid)=>{
-  //   console.log(cid)
+  //   //console.log(cid)
   //   try{
   //     await deleteOneCourse(cid)
   //     refetch()
   //     }catch(err){
-  //         console.log(err.message)
+  //         //console.log(err.message)
   //     }
   
   // }
@@ -85,7 +85,7 @@ const columns = [
       selector: row => (
           <div >
             <Link to={`/course/${row.Course.cid}`}>
-             <button className='bg-blue-600 px-4 py-3 rounded-lg text-white' onClick={e=> console.log("its clicked the edit button")}>Details</button>
+             <button className='bg-blue-600 px-4 py-3 rounded-lg text-white' onClick={e=> //console.log("its clicked the edit button")}>Details</button>
              </Link>
           </div>
           )

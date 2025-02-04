@@ -7,7 +7,7 @@ import { getOneProfile } from '../../api/profile'
 const OrderDetails2 = () => {
 
     const data=useLoaderData()
-    console.log(data)
+    //console.log(data)
     const { data: oneUser = [], refetch } = useQuery({
         queryKey: ['oneUserr'],
         queryFn: async () => await getOneUser(data?.email),   
@@ -16,8 +16,8 @@ const OrderDetails2 = () => {
         queryKey: ['oneProfilee'],
         queryFn: async () => await getOneProfile(data?.email),   
       })
-      console.log(oneUser)
-      console.log(oneprofile)
+      //console.log(oneUser)
+      //console.log(oneprofile)
   return (
     <div>
     

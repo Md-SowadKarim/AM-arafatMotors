@@ -12,7 +12,7 @@ export const saveUser = async user => {
     sid:sid,
     dob:""
   }
-  console.log(currentUser )
+  ////console.log(currentUser )
   const { data } = await axiosSecure.put(`/users/${user?.email}`, currentUser)
 
   return data
@@ -21,7 +21,7 @@ export const saveUser = async user => {
 // Get token from server
 export const getToken = async email => {
   const { data } = await axiosSecure.post(`/jwt`, { email })
-  console.log('Token received from server------>', data)
+  ////console.log('Token received from server------>', data)
   return data
 }
 
@@ -66,7 +66,7 @@ export const updateRole = async ({ email, rolee }) => {
     role:rolee,
     status: 'Verified',
   }
-  console.log(currentUser)
+  ////console.log(currentUser)
   const { data } = await axiosSecure.put(`/users/update/${email}`, currentUser)
   return data
 }
@@ -78,7 +78,7 @@ export const updateDOB = async ({ email, dob }) => {
     dob:dob,
     status: 'Verified',
   }
-  console.log(currentUser)
+  ////console.log(currentUser)
   const { data } = await axiosSecure.put(`/users/update/${email}`, currentUser)
   return data
 }
@@ -89,7 +89,7 @@ export const becomeHost = async email => {
     email,
     status: 'Requested',
   }
-  console.log("aita ki console hbe na....",currentUser)
+  ////console.log("aita ki console hbe na....",currentUser)
   const { data } = await axiosSecure.put(`/users/${email}`, currentUser)
   return data
 }

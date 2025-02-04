@@ -12,7 +12,7 @@ const OrderDetails = () => {
     const contentRef = useRef(null);
     const reactToPrintFn = useReactToPrint({ contentRef });
     const data=useLoaderData()
-    console.log(data)
+    //console.log(data)
     const { data: oneUser = [], refetch } = useQuery({
         queryKey: ['oneUserr'],
         queryFn: async () => await getOneUser(data?.email),   
@@ -21,8 +21,8 @@ const OrderDetails = () => {
         queryKey: ['oneProfilee'],
         queryFn: async () => await getOneProfile(data?.email),   
       })
-      console.log(oneUser)
-      console.log(oneprofile)
+      //console.log(oneUser)
+      //console.log(oneprofile)
   return (
     <Container>
     <div ref={contentRef} class="text-sm leading-6  border-2 border-red-500 rounded-2xl m-4 md:w-[50%] mx-auto">

@@ -2,14 +2,14 @@ import axiosSecure from '.'
 
 // add or update question data in db
 export const addBlog = async (blogData,bid) => {
-    console.log(blogData,bid,"data....................")
+    ////console.log(blogData,bid,"data....................")
    const { data } = await axiosSecure.put(`/blog?bid=${bid}`, blogData)
    return data
   }
 
   export const getAllBlog = async () => {
     const { data } = await axiosSecure('/allblog')
-    console.log(data)
+    ////console.log(data)
     return data
   }
 

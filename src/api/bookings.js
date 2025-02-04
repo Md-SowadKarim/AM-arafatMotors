@@ -20,7 +20,7 @@ export const updateStatus = async (id, status) => {
 
 
 export const approveContact=async({email,id})=>{
-  console.log(email,id)
+  ////console.log(email,id)
   const{data}=await axiosSecure.patch(`/approvecontact?email=${email}&id=${id}`)
   return data
 }
@@ -38,6 +38,6 @@ export const getHostBookings = async email => {
 
 export const getAllBookings = async () => {
   const { data } = await axiosSecure('/allbookings')
-  console.log(data)
+  ////console.log(data)
   return data
 }

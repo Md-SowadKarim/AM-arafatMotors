@@ -16,7 +16,7 @@ import { imageUpload } from '../../../api/utils';
 const AddCourse = () => {
   const navigate = useNavigate()
    const { user } = useAuth()
-   console.log(user)
+   //console.log(user)
   //  const {role,isLoading}=useRole(user.email)
   const [loading, setLoading] = useState(false)
   const [uploadButtonText, setUploadButtonText] = useState('Upload Image')
@@ -65,12 +65,12 @@ const AddCourse = () => {
 
     try {
       const data = await addCourse(courseData,cid)
-      console.log(data)
+      //console.log(data)
       setUploadButtonText('Uploaded!')
       toast.success('Course Added!')
     
     } catch (err) {
-      console.log(err)
+      //console.log(err)
       toast.error(err.message)
     } finally {
       setLoading(false)

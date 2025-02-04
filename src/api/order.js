@@ -2,20 +2,20 @@ import axiosSecure from '.'
 
 // add or update question data in db
 export const addOrder = async (orderData,oid) => {
-    console.log(orderData,oid,"data....................")
+    ////console.log(orderData,oid,"data....................")
    const { data } = await axiosSecure.put(`/order?oid=${oid}`, orderData)
    return data
   }
 
   export const getUserOrder = async (uemail) => {
-    console.log(uemail,"data....................")
+    ////console.log(uemail,"data....................")
     const { data } = await axiosSecure(`/userOrder/${uemail}`)
-    console.log(data)
+    ////console.log(data)
     return data
   }
   export const getAllOrder = async () => {
     const { data } = await axiosSecure('/allOrder')
-    console.log(data)
+    ////console.log(data)
     return data
   }
 
