@@ -109,7 +109,7 @@ const columns = [
       selector: row => (
           <div >
             <Link to={`edit-course/${row.cid}`}>
-             <button className='bg-blue-600 px-4 py-3 rounded-lg text-white' onClick={e=> //console.log("its clicked the edit button")}>Edit</button>
+             <button className='bg-blue-600 px-4 py-3 rounded-lg text-white' >Edit</button>
              </Link>
           </div>
           )
