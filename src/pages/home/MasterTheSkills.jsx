@@ -1,4 +1,4 @@
-import image from "/public/image/img3.jpg"
+import image from "/public/image/imggakkery4.jpg"
 import image2 from "/public/image/skill1.jpg"
 import image3 from "/public/image/skill2.jpg"
 import image4 from "/public/image/skill3.jpg"
