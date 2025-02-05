@@ -43,7 +43,7 @@ const Footer = () => {
                         className=" max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left"
                     >
 
-                      Arafat Driving Training School is a BRTA registered Driving Training School. [Reg. No: 139/2019] It is the first and only driving school in Bangladesh that has its own learning management software (LMS).
+                      Arafat Motor Driving Training School is a BRTA registered Driving Training School. [Reg. No: 139/2019] It is the first and only driving school in Bangladesh that has its own learning management software (LMS).
                     </p>
 
                     <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
@@ -241,7 +241,7 @@ const Footer = () => {
                                         />
                                     </svg>
 
-                                    <span className="flex-1 text-gray-700">arafat.amdts2025@gamil.com</span>
+                                    <span className="flex-1 text-gray-700">arafat.amdts@gmail.com</span>
                                 </a>
                             </li>
 

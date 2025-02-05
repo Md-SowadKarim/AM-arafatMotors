@@ -42,6 +42,11 @@ export const getOneUser = async email => {
   return data
 }
 // Get specific
+export const getOneUserWithSid = async sid => {
+  const { data } = await axiosSecure(`/oneuserWithSid/${sid}`)
+  return data
+}
+// Get specific
 export const verifyUser = async email => {
   const { data } = await axiosSecure(`/verifyuser/${email}`)
   return data

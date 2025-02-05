@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import React, { useState } from 'react'
 import { Link, useLoaderData } from 'react-router-dom'
-import { getOneUser, verifyUser } from '../../api/auth'
+import { getOneUser, getOneUserWithSid, verifyUser } from '../../api/auth'
 import useAuth from '../../hooks/useAuth'
 import Loader from '../../components/shared/Loader'
 import toast from 'react-hot-toast'
@@ -37,13 +37,13 @@ const data= useLoaderData()
     e.preventDefault()
   
       const form = e.target
-      const  email=form.email.value
+      const  sid=form.sid.value
       const  dob=form.dob.value
 
-      const profile= await getOneUser(email)
+      const profile= await getOneUserWithSid(sid)
       //console.log(profile)
       if(!profile){
-        toast.error("there is no profile with this email")
+        toast.error("there is no profile with this SID")
       }else if(profile.dob !== dob){
         toast.error("Date Of Birth Is Not Matched")
       }else{
@@ -159,7 +159,7 @@ const data= useLoaderData()
             </svg>
         </div>
         <div>
-        <input  name='email'  type="text" id="default-search" className="block w-full mb-2 p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="student@gmail.com" required />
+        <input  name='sid'  type="text" id="default-search" className="block w-full mb-2 p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="SID*********" required />
         <input  name='dob'  type="date" id="default-search" className="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Date Of Birth with right formate" required />
        
         </div>
