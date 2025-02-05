@@ -316,7 +316,7 @@ const Footer = () => {
                                 </svg>
 
                                 <address className="-mt-0.5 flex-1 not-italic text-gray-700">
-                                Badamtala, Siromoni, Khulna
+                                Badamtola, Beside of BRTA Office, Shiromoni- 9204, Khanjahan Ali, Khulna.
                                 </address>
                             </li>
                         </ul>
@@ -348,7 +348,7 @@ const Footer = () => {
                     </p>
 
                     <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-                        &copy;  Arafat Motors Training School 2025
+                        &copy;  Arafat Motors Training School 2019
                     </p>
 
 
