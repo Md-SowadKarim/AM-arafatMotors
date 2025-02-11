@@ -348,7 +348,7 @@ const Footer = () => {
                     </p>
 
                     <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-                        &copy;  Arafat Motors Training School 2019
+                        &copy;  Arafat Motors Training School 2011
                     </p>
 
 

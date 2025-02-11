@@ -9,8 +9,10 @@ const Map = () => {
 
     useEffect(()=>{
         const ifameData=document.getElementById("iframeId")
-        const lat=22.813900;
-        const lon=89.567231;
+        const lat= 22.90807525075002;
+        const lon=89.50788621920398;
+       // 22.908269161770818, 89.50754332793416
+       
         ifameData.src=`https://maps.google.com/maps?q=${lat},${lon}&hl=es;&output=embed`
     }) 
 
