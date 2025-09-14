@@ -20,7 +20,7 @@ const TrustUs = () => {
           </h2>
 
           <p className="hidden text-gray-500 md:mt-4 md:block">
-          Arafat Driving Training School is a BRTA registered Driving Training Centre. [Reg. No: 116/2018] It is the first and only driving school in Bangladesh that has its own learning management software (LMS).
+          Arafat Driving Training School is a BRTA registered Driving Training Centre. [Reg. No: 139/2019] It is the first and only driving school in Bangladesh that has its own learning management software (LMS).
           </p>
 
           <div className="mt-4 md:mt-8">
