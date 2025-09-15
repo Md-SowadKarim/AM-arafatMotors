@@ -13,6 +13,13 @@ const AdminMenu = () => {
 
       <MenuItem icon={FaUserCog} label="Manage Users" address="manage-users" />
       <MenuItem icon={FaUserCog} label="Manage Order" address="manage-order" />
+       <MenuItem icon={FaUserCog} label="Add Course" address="add-course" />
+          <MenuItem
+            icon={FaUserCog}
+            label="Manage Course"
+            address="manage-course"
+          />
+      
       {user?.email == "sowad1999@gmail.com" ? (
         <div>
           <MenuItem icon={FaUserCog} label="Add Blogs" address="add-blogs" />
@@ -21,12 +28,7 @@ const AdminMenu = () => {
             label="Manage Blogs"
             address="manage-blogs"
           />
-          <MenuItem icon={FaUserCog} label="Add Course" address="add-course" />
-          <MenuItem
-            icon={FaUserCog}
-            label="Manage Course"
-            address="manage-course"
-          />
+         
         </div>
       ) : (
         ""
