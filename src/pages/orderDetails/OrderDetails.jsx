@@ -22,7 +22,7 @@ const OrderDetails = () => {
         queryFn: async () => await getOneProfile(data?.email),   
       })
       //console.log(oneUser)
-      //console.log(oneprofile)
+     // console.log(data)
   return (
     <Container>
     <div ref={contentRef} class="text-sm leading-6  border-2 border-red-500 rounded-2xl m-4 md:w-[50%] mx-auto">
@@ -32,7 +32,7 @@ const OrderDetails = () => {
             <p><strong>Father:</strong> {data.fname} </p>
             <p><strong>Mother:</strong> {data.mname} </p>
             <p><strong>SID:</strong> {data.sid} </p>
-            <p><strong>NID:</strong> {data.nid} </p>
+            <p><strong>NID:</strong> {oneprofile.nid} </p>
             <p><strong>Course Status:</strong> {data.status} </p>
             <p><strong>Phone:</strong> {oneprofile.phone} </p>
             <p><strong>Date Of Birth:</strong> {oneprofile.dob} </p>
@@ -43,7 +43,7 @@ const OrderDetails = () => {
         </div>
         <figcaption class="flex items-center space-x-4 justify-center">
         <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-    <img class="object-cover w-[80%] rounded-t-lg h-auto md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={oneprofile.image} alt=""/>
+    <img class="object-cover w-[50%] rounded-t-lg h-auto md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={oneprofile.image} alt=""/>
     <div class="flex flex-col justify-between p-4 leading-normal">
     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{oneprofile.name}</h5>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{data.email}</p>
